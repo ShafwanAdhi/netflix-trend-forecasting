@@ -1,0 +1,573 @@
+{
+  "source_sha256": "90b02beeb554921f81d3b9a774d0f7766f6a65240162565f6b4082165dc2a1d3",
+  "raw_rows": 8790,
+  "entity_rows": 8783,
+  "duplicate_mapping": [
+    {
+      "removed_id": "s5965",
+      "retained_id": "s3997"
+    },
+    {
+      "removed_id": "s5966",
+      "retained_id": "s4523"
+    },
+    {
+      "removed_id": "s5967",
+      "retained_id": "s3963"
+    },
+    {
+      "removed_id": "s6530",
+      "retained_id": "s3372"
+    },
+    {
+      "removed_id": "s6706",
+      "retained_id": "s304"
+    },
+    {
+      "removed_id": "s7346",
+      "retained_id": "s160"
+    },
+    {
+      "removed_id": "s8023",
+      "retained_id": "s1271"
+    }
+  ],
+  "snapshot_date": "2021-09-25",
+  "date_anomalies": [
+    {
+      "show_id": "s5395",
+      "title": "Hans Teeuwen: Real Rancour",
+      "date_added": "7/1/2017",
+      "release_year": 2018
+    },
+    {
+      "show_id": "s7064",
+      "title": "Incoming",
+      "date_added": "10/26/2018",
+      "release_year": 2019
+    },
+    {
+      "show_id": "s7113",
+      "title": "Jack Taylor",
+      "date_added": "3/31/2013",
+      "release_year": 2016
+    },
+    {
+      "show_id": "s1552",
+      "title": "Hilda",
+      "date_added": "12/14/2020",
+      "release_year": 2021
+    },
+    {
+      "show_id": "s1697",
+      "title": "Polly Pocket",
+      "date_added": "11/15/2020",
+      "release_year": 2021
+    },
+    {
+      "show_id": "s2921",
+      "title": "Love Is Blind",
+      "date_added": "2/13/2020",
+      "release_year": 2021
+    },
+    {
+      "show_id": "s3169",
+      "title": "Fuller House",
+      "date_added": "12/6/2019",
+      "release_year": 2020
+    },
+    {
+      "show_id": "s3288",
+      "title": "Maradona in Mexico",
+      "date_added": "11/13/2019",
+      "release_year": 2020
+    },
+    {
+      "show_id": "s3370",
+      "title": "BoJack Horseman",
+      "date_added": "10/25/2019",
+      "release_year": 2020
+    },
+    {
+      "show_id": "s3434",
+      "title": "The Hook Up Plan",
+      "date_added": "10/11/2019",
+      "release_year": 2020
+    },
+    {
+      "show_id": "s4845",
+      "title": "Unbreakable Kimmy Schmidt",
+      "date_added": "5/30/2018",
+      "release_year": 2019
+    },
+    {
+      "show_id": "s4846",
+      "title": "Arrested Development",
+      "date_added": "5/29/2018",
+      "release_year": 2019
+    },
+    {
+      "show_id": "s5659",
+      "title": "Sense8",
+      "date_added": "12/23/2016",
+      "release_year": 2018
+    },
+    {
+      "show_id": "s5678",
+      "title": "Tokyo Trial",
+      "date_added": "12/13/2016",
+      "release_year": 2017
+    }
+  ],
+  "anomaly_policy": "Retain source dates; release year may describe a later season. No chronological imputation or date correction.",
+  "deduplication": "First source row per casefolded trimmed title/type/year; same entity policy as Task 4, independent outputs",
+  "annual_excluded_2021": 592,
+  "monthly_excluded_september_2021": 183,
+  "series_sha256": "7b4a8c492201cc20bb3053bf2e5969d14778156fe71029d0f8830bc5c0ec6f8f",
+  "release_history": [
+    {
+      "year": 1925,
+      "movies": 0,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1942,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1943,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1944,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1945,
+      "movies": 3,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1946,
+      "movies": 1,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1947,
+      "movies": 1,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1954,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1955,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1956,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1958,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1959,
+      "movies": 1,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1960,
+      "movies": 4,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1961,
+      "movies": 1,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1962,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1963,
+      "movies": 1,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1964,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1965,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1966,
+      "movies": 1,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1967,
+      "movies": 4,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1968,
+      "movies": 3,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1969,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1970,
+      "movies": 2,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1971,
+      "movies": 5,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1972,
+      "movies": 4,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1973,
+      "movies": 10,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1974,
+      "movies": 6,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1975,
+      "movies": 7,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1976,
+      "movies": 9,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1977,
+      "movies": 6,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1978,
+      "movies": 7,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1979,
+      "movies": 10,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1980,
+      "movies": 11,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1981,
+      "movies": 12,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1982,
+      "movies": 17,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1983,
+      "movies": 11,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1984,
+      "movies": 12,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1985,
+      "movies": 8,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1986,
+      "movies": 11,
+      "tv": 2,
+      "partial": false
+    },
+    {
+      "year": 1987,
+      "movies": 8,
+      "tv": 0,
+      "partial": false
+    },
+    {
+      "year": 1988,
+      "movies": 16,
+      "tv": 2,
+      "partial": false
+    },
+    {
+      "year": 1989,
+      "movies": 15,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1990,
+      "movies": 19,
+      "tv": 3,
+      "partial": false
+    },
+    {
+      "year": 1991,
+      "movies": 16,
+      "tv": 1,
+      "partial": false
+    },
+    {
+      "year": 1992,
+      "movies": 20,
+      "tv": 3,
+      "partial": false
+    },
+    {
+      "year": 1993,
+      "movies": 24,
+      "tv": 4,
+      "partial": false
+    },
+    {
+      "year": 1994,
+      "movies": 20,
+      "tv": 2,
+      "partial": false
+    },
+    {
+      "year": 1995,
+      "movies": 23,
+      "tv": 2,
+      "partial": false
+    },
+    {
+      "year": 1996,
+      "movies": 21,
+      "tv": 3,
+      "partial": false
+    },
+    {
+      "year": 1997,
+      "movies": 34,
+      "tv": 4,
+      "partial": false
+    },
+    {
+      "year": 1998,
+      "movies": 32,
+      "tv": 4,
+      "partial": false
+    },
+    {
+      "year": 1999,
+      "movies": 32,
+      "tv": 7,
+      "partial": false
+    },
+    {
+      "year": 2000,
+      "movies": 33,
+      "tv": 4,
+      "partial": false
+    },
+    {
+      "year": 2001,
+      "movies": 40,
+      "tv": 5,
+      "partial": false
+    },
+    {
+      "year": 2002,
+      "movies": 44,
+      "tv": 7,
+      "partial": false
+    },
+    {
+      "year": 2003,
+      "movies": 51,
+      "tv": 8,
+      "partial": false
+    },
+    {
+      "year": 2004,
+      "movies": 55,
+      "tv": 9,
+      "partial": false
+    },
+    {
+      "year": 2005,
+      "movies": 67,
+      "tv": 13,
+      "partial": false
+    },
+    {
+      "year": 2006,
+      "movies": 82,
+      "tv": 14,
+      "partial": false
+    },
+    {
+      "year": 2007,
+      "movies": 74,
+      "tv": 14,
+      "partial": false
+    },
+    {
+      "year": 2008,
+      "movies": 113,
+      "tv": 22,
+      "partial": false
+    },
+    {
+      "year": 2009,
+      "movies": 118,
+      "tv": 34,
+      "partial": false
+    },
+    {
+      "year": 2010,
+      "movies": 152,
+      "tv": 39,
+      "partial": false
+    },
+    {
+      "year": 2011,
+      "movies": 145,
+      "tv": 40,
+      "partial": false
+    },
+    {
+      "year": 2012,
+      "movies": 173,
+      "tv": 63,
+      "partial": false
+    },
+    {
+      "year": 2013,
+      "movies": 225,
+      "tv": 61,
+      "partial": false
+    },
+    {
+      "year": 2014,
+      "movies": 263,
+      "tv": 88,
+      "partial": false
+    },
+    {
+      "year": 2015,
+      "movies": 396,
+      "tv": 159,
+      "partial": false
+    },
+    {
+      "year": 2016,
+      "movies": 658,
+      "tv": 243,
+      "partial": false
+    },
+    {
+      "year": 2017,
+      "movies": 765,
+      "tv": 265,
+      "partial": false
+    },
+    {
+      "year": 2018,
+      "movies": 766,
+      "tv": 377,
+      "partial": false
+    },
+    {
+      "year": 2019,
+      "movies": 632,
+      "tv": 397,
+      "partial": false
+    },
+    {
+      "year": 2020,
+      "movies": 517,
+      "tv": 436,
+      "partial": false
+    },
+    {
+      "year": 2021,
+      "movies": 277,
+      "tv": 315,
+      "partial": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "releases:all": {
+    "model": "ridge_1",
+    "selected_at": "2026-11-06T12:22:13.672661+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2016-01-01",
+    "test_start": "2017-01-01"
+  },
+  "releases:movies": {
+    "model": "ridge_1",
+    "selected_at": "2026-11-06T12:22:17.039779+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2016-01-01",
+    "test_start": "2017-01-01"
+  },
+  "releases:tv": {
+    "model": "ridge_1",
+    "selected_at": "2026-11-06T12:22:20.819298+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2016-01-01",
+    "test_start": "2017-01-01"
+  },
+  "additions:all": {
+    "model": "ridge_100",
+    "selected_at": "2026-11-06T12:22:25.162366+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2021-02-01",
+    "test_start": "2021-03-01"
+  },
+  "additions:movies": {
+    "model": "ridge_100",
+    "selected_at": "2026-11-06T12:22:29.685961+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2021-02-01",
+    "test_start": "2021-03-01"
+  },
+  "additions:tv": {
+    "model": "forest_shallow",
+    "selected_at": "2026-11-06T12:22:34.117935+00:00",
+    "rule": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+    "development_end": "2021-02-01",
+    "test_start": "2021-03-01"
+  }
+}

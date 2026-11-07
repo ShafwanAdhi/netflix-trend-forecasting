@@ -1,0 +1,232 @@
+{
+  "task_id": 5,
+  "title": "Trend Forecasting",
+  "run_id": "20261106T122211417836Z",
+  "source_file": "User-supplied Dataset.csv (10 source variables)",
+  "source_sha256": "90b02beeb554921f81d3b9a774d0f7766f6a65240162565f6b4082165dc2a1d3",
+  "snapshot_date": "2021-09-25",
+  "raw_rows": 8790,
+  "variables": [
+    {
+      "name": "type",
+      "role": "Grouping only",
+      "reason": "Forecasts use aggregate time series, not per-title content metadata.",
+      "treatment": "Only content type defines All/Movie/TV scope; other metadata does not enter the model."
+    },
+    {
+      "name": "country",
+      "role": "Excluded",
+      "reason": "Forecasts use aggregate time series, not per-title content metadata.",
+      "treatment": "Only content type defines All/Movie/TV scope; other metadata does not enter the model."
+    },
+    {
+      "name": "listed_in",
+      "role": "Excluded",
+      "reason": "Forecasts use aggregate time series, not per-title content metadata.",
+      "treatment": "Only content type defines All/Movie/TV scope; other metadata does not enter the model."
+    },
+    {
+      "name": "duration",
+      "role": "Excluded",
+      "reason": "Forecasts use aggregate time series, not per-title content metadata.",
+      "treatment": "Only content type defines All/Movie/TV scope; other metadata does not enter the model."
+    },
+    {
+      "name": "release_year",
+      "role": "Target time axis",
+      "reason": "Measures original release cohort; it is distinct from date added.",
+      "treatment": "Annual cohorts; incomplete 2021 is excluded."
+    },
+    {
+      "name": "date_added",
+      "role": "Target time axis",
+      "reason": "Measures catalog entry, not original release.",
+      "treatment": "Aggregate completed months; exclude September 2021."
+    },
+    {
+      "name": "rating",
+      "role": "Excluded",
+      "reason": "Advisory ratings are not viewer scores, commercial success or clustering ground truth.",
+      "treatment": "Never used as a model feature or performance label."
+    },
+    {
+      "name": "director",
+      "role": "Excluded",
+      "reason": "High cardinality is outside the chosen geometry/time-series feature set.",
+      "treatment": "Retain only as source context."
+    },
+    {
+      "name": "show_id / title",
+      "role": "Identity / display only",
+      "reason": "Trace records and remove repeated entities; unique identifiers do not describe generalizable content.",
+      "treatment": "Exclude from features; title/type/year supports entity review."
+    },
+    {
+      "name": "lags / trailing means / trend / seasonality",
+      "role": "Derived features",
+      "reason": "Past counts, local averages and calendar cycles describe persistence, trend and seasonal changes.",
+      "treatment": "Only observations before the predicted period enter each feature; recursively use predictions for unknown future lags."
+    }
+  ],
+  "decisions": [
+    {
+      "action": "Separate release-year and catalog-entry forecasts",
+      "reason": "date_added is not an original release date; combining them would change the target without disclosure.",
+      "evidence": "Six separately recorded series; annual 2000–2020 and monthly 2015-01–2021-08.",
+      "limitation": "One retrospective catalog snapshot has survivorship/backfill bias and is not a point-in-time archive."
+    },
+    {
+      "action": "Exclude incomplete final cohorts",
+      "reason": "A partial year/month would artificially lower recent counts.",
+      "evidence": "Exclude 592 2021 release-cohort titles and 183 September additions from modeling.",
+      "limitation": "Exclusion does not establish that older cohorts are complete."
+    },
+    {
+      "action": "Freeze selection before the chronological test",
+      "reason": "Test results must reveal failure rather than retrospectively select a better model.",
+      "evidence": "Annual CV winner has test MAE 2395.37 versus last-value 137.75; the failure remains visible.",
+      "limitation": "Exploratory CV error bands are not calibrated confidence intervals or reliable current forecasts."
+    }
+  ],
+  "stages": [
+    {
+      "name": "Source validation",
+      "input_rows": 8790,
+      "output_rows": 8790,
+      "reason": "Verify the supplied SHA-256, schema, types and duration units."
+    },
+    {
+      "name": "Entity deduplication",
+      "input_rows": 8790,
+      "output_rows": 8783,
+      "reason": "Remove 7 repeated entities; preserve both independent time concepts."
+    }
+  ],
+  "partitions": [
+    {
+      "name": "releases / all — development",
+      "rows": 17,
+      "purpose": "Fitting history ends 2016-01-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "releases / all — test",
+      "rows": 4,
+      "purpose": "Frozen observed years: 2017-01-01 through 2020-01-01. Selected model: ridge_1.",
+      "segments": [],
+      "metrics": {
+        "mae": 2395.3692217918656,
+        "rmse": 3074.4155086000274,
+        "smape": 89.07462540502266,
+        "wape": 2.306011284516838,
+        "mase": 42.966264068015526
+      }
+    },
+    {
+      "name": "releases / movies — development",
+      "rows": 17,
+      "purpose": "Fitting history ends 2016-01-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "releases / movies — test",
+      "rows": 4,
+      "purpose": "Frozen observed years: 2017-01-01 through 2020-01-01. Selected model: ridge_1.",
+      "segments": [],
+      "metrics": {
+        "mae": 1801.7014378784452,
+        "rmse": 2319.4918265729334,
+        "smape": 95.16143177937018,
+        "wape": 2.689106623699172,
+        "mase": 44.011027490160494
+      }
+    },
+    {
+      "name": "releases / tv — development",
+      "rows": 17,
+      "purpose": "Fitting history ends 2016-01-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "releases / tv — test",
+      "rows": 4,
+      "purpose": "Frozen observed years: 2017-01-01 through 2020-01-01. Selected model: ridge_1.",
+      "segments": [],
+      "metrics": {
+        "mae": 527.5819876257019,
+        "rmse": 672.0943543446809,
+        "smape": 70.2562575773091,
+        "wape": 1.4307308139002086,
+        "mase": 34.73790865025198
+      }
+    },
+    {
+      "name": "additions / all — development",
+      "rows": 74,
+      "purpose": "Fitting history ends 2021-02-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "additions / all — test",
+      "rows": 6,
+      "purpose": "Frozen observed months: 2021-03-01 through 2021-08-01. Selected model: ridge_100.",
+      "segments": [],
+      "metrics": {
+        "mae": 48.107197287962016,
+        "rmse": 57.81331480312566,
+        "smape": 27.87914296649032,
+        "wape": 0.26875529211151966,
+        "mase": 1.1897272564234722
+      }
+    },
+    {
+      "name": "additions / movies — development",
+      "rows": 74,
+      "purpose": "Fitting history ends 2021-02-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "additions / movies — test",
+      "rows": 6,
+      "purpose": "Frozen observed months: 2021-03-01 through 2021-08-01. Selected model: ridge_100.",
+      "segments": [],
+      "metrics": {
+        "mae": 28.509511642266954,
+        "rmse": 35.214995207198314,
+        "smape": 24.649634108395485,
+        "wape": 0.23957572808627692,
+        "mase": 0.8851225447273666
+      }
+    },
+    {
+      "name": "additions / tv — development",
+      "rows": 74,
+      "purpose": "Fitting history ends 2021-02-01; chronological CV remains strictly earlier than test.",
+      "segments": [],
+      "metrics": {}
+    },
+    {
+      "name": "additions / tv — test",
+      "rows": 6,
+      "purpose": "Frozen observed months: 2021-03-01 through 2021-08-01. Selected model: forest_shallow.",
+      "segments": [],
+      "metrics": {
+        "mae": 19.327266644380117,
+        "rmse": 23.519928617074715,
+        "smape": 33.165792685580435,
+        "wape": 0.3221211107396686,
+        "mase": 1.457774369770763
+      }
+    }
+  ],
+  "split_strategy": "Annual: 17 development years / 4 test years for each content scope. Monthly: 74 development months / 6 test months. These are period counts, not randomly split title rows. No row-level train/test ratio is fabricated.",
+  "limitations": [
+    "This is the supplied historical catalog snapshot, not a current Netflix data feed.",
+    "Decisions are concise, evidence-backed summaries; model outputs do not establish causation."
+  ]
+}

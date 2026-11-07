@@ -1,0 +1,10 @@
+{
+  "source_sha256": "90b02beeb554921f81d3b9a774d0f7766f6a65240162565f6b4082165dc2a1d3",
+  "seed": 42,
+  "selection": "lowest mean expanding-window validation MAE, then declared candidate order; freeze before final chronological test",
+  "band_quantile": 0.8,
+  "targets": {
+    "releases": {"frequency": "YS", "start": "2000-01-01", "end": "2020-01-01", "test_size": 4, "horizon": 3, "cv_origins": ["2010-01-01", "2011-01-01", "2012-01-01", "2013-01-01", "2014-01-01"], "cv_horizon": 2, "lags": [1, 2, 3]},
+    "additions": {"frequency": "MS", "start": "2015-01-01", "end": "2021-08-01", "test_size": 6, "horizon": 6, "cv_origins": ["2018-12-01", "2019-06-01", "2019-12-01", "2020-06-01"], "cv_horizon": 6, "lags": [1, 2, 3, 6, 12]}
+  }
+}

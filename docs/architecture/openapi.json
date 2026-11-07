@@ -1,0 +1,1015 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Trend Forecasting",
+    "version": "2.0.0"
+  },
+  "paths": {
+    "/api/v1/dataset": {
+      "get": {
+        "tags": [
+          "Dataset"
+        ],
+        "summary": "Dataset",
+        "operationId": "dataset_api_v1_dataset_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DatasetInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tasks/5/results": {
+      "get": {
+        "tags": [
+          "Forecasting"
+        ],
+        "summary": "Results",
+        "operationId": "results_api_v1_tasks_5_results_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ForecastResults"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tasks/5/forecast": {
+      "get": {
+        "tags": [
+          "Forecasting"
+        ],
+        "summary": "Forecast",
+        "operationId": "forecast_api_v1_tasks_5_forecast_get",
+        "parameters": [
+          {
+            "name": "target",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "releases",
+                "additions"
+              ],
+              "type": "string",
+              "default": "releases",
+              "title": "Target"
+            }
+          },
+          {
+            "name": "group",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "enum": [
+                "all",
+                "movies",
+                "tv"
+              ],
+              "type": "string",
+              "default": "all",
+              "title": "Group"
+            }
+          },
+          {
+            "name": "horizon",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "integer",
+                  "maximum": 6,
+                  "minimum": 1
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Horizon"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ForecastResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_api_v1_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/tasks": {
+      "get": {
+        "summary": "Tasks",
+        "operationId": "tasks_api_v1_tasks_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "BacktestPoint": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period"
+          },
+          "predicted": {
+            "type": "number",
+            "title": "Predicted"
+          },
+          "lower": {
+            "type": "number",
+            "title": "Lower"
+          },
+          "upper": {
+            "type": "number",
+            "title": "Upper"
+          },
+          "actual": {
+            "type": "number",
+            "title": "Actual"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "predicted",
+          "lower",
+          "upper",
+          "actual"
+        ],
+        "title": "BacktestPoint"
+      },
+      "DatasetInfo": {
+        "properties": {
+          "task_id": {
+            "type": "integer",
+            "title": "Task Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "source_file": {
+            "type": "string",
+            "title": "Source File"
+          },
+          "source_sha256": {
+            "type": "string",
+            "title": "Source Sha256"
+          },
+          "snapshot_date": {
+            "type": "string",
+            "title": "Snapshot Date"
+          },
+          "raw_rows": {
+            "type": "integer",
+            "title": "Raw Rows"
+          },
+          "variables": {
+            "items": {
+              "$ref": "#/components/schemas/Variable"
+            },
+            "type": "array",
+            "title": "Variables"
+          },
+          "decisions": {
+            "items": {
+              "$ref": "#/components/schemas/Decision"
+            },
+            "type": "array",
+            "title": "Decisions"
+          },
+          "stages": {
+            "items": {
+              "$ref": "#/components/schemas/Stage"
+            },
+            "type": "array",
+            "title": "Stages"
+          },
+          "partitions": {
+            "items": {
+              "$ref": "#/components/schemas/Partition"
+            },
+            "type": "array",
+            "title": "Partitions"
+          },
+          "split_strategy": {
+            "type": "string",
+            "title": "Split Strategy"
+          },
+          "limitations": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "title": "Limitations"
+          }
+        },
+        "type": "object",
+        "required": [
+          "task_id",
+          "title",
+          "run_id",
+          "source_file",
+          "source_sha256",
+          "snapshot_date",
+          "raw_rows",
+          "variables",
+          "decisions",
+          "stages",
+          "partitions",
+          "split_strategy",
+          "limitations"
+        ],
+        "title": "DatasetInfo"
+      },
+      "DateAnomaly": {
+        "properties": {
+          "show_id": {
+            "type": "string",
+            "title": "Show Id"
+          },
+          "title": {
+            "type": "string",
+            "title": "Title"
+          },
+          "date_added": {
+            "type": "string",
+            "title": "Date Added"
+          },
+          "release_year": {
+            "type": "integer",
+            "title": "Release Year"
+          }
+        },
+        "type": "object",
+        "required": [
+          "show_id",
+          "title",
+          "date_added",
+          "release_year"
+        ],
+        "title": "DateAnomaly"
+      },
+      "Decision": {
+        "properties": {
+          "action": {
+            "type": "string",
+            "title": "Action"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "evidence": {
+            "type": "string",
+            "title": "Evidence"
+          },
+          "limitation": {
+            "type": "string",
+            "title": "Limitation"
+          }
+        },
+        "type": "object",
+        "required": [
+          "action",
+          "reason",
+          "evidence",
+          "limitation"
+        ],
+        "title": "Decision"
+      },
+      "DuplicatePair": {
+        "properties": {
+          "removed_id": {
+            "type": "string",
+            "title": "Removed Id"
+          },
+          "retained_id": {
+            "type": "string",
+            "title": "Retained Id"
+          }
+        },
+        "type": "object",
+        "required": [
+          "removed_id",
+          "retained_id"
+        ],
+        "title": "DuplicatePair"
+      },
+      "ForecastAudit": {
+        "properties": {
+          "source_sha256": {
+            "type": "string",
+            "title": "Source Sha256"
+          },
+          "raw_rows": {
+            "type": "integer",
+            "title": "Raw Rows"
+          },
+          "entity_rows": {
+            "type": "integer",
+            "title": "Entity Rows"
+          },
+          "duplicate_mapping": {
+            "items": {
+              "$ref": "#/components/schemas/DuplicatePair"
+            },
+            "type": "array",
+            "title": "Duplicate Mapping"
+          },
+          "snapshot_date": {
+            "type": "string",
+            "title": "Snapshot Date"
+          },
+          "date_anomalies": {
+            "items": {
+              "$ref": "#/components/schemas/DateAnomaly"
+            },
+            "type": "array",
+            "title": "Date Anomalies"
+          },
+          "anomaly_policy": {
+            "type": "string",
+            "title": "Anomaly Policy"
+          },
+          "deduplication": {
+            "type": "string",
+            "title": "Deduplication"
+          },
+          "annual_excluded_2021": {
+            "type": "integer",
+            "title": "Annual Excluded 2021"
+          },
+          "monthly_excluded_september_2021": {
+            "type": "integer",
+            "title": "Monthly Excluded September 2021"
+          },
+          "series_sha256": {
+            "type": "string",
+            "title": "Series Sha256"
+          },
+          "release_history": {
+            "items": {
+              "$ref": "#/components/schemas/ReleaseCohort"
+            },
+            "type": "array",
+            "title": "Release History"
+          }
+        },
+        "type": "object",
+        "required": [
+          "source_sha256",
+          "raw_rows",
+          "entity_rows",
+          "duplicate_mapping",
+          "snapshot_date",
+          "date_anomalies",
+          "anomaly_policy",
+          "deduplication",
+          "annual_excluded_2021",
+          "monthly_excluded_september_2021",
+          "series_sha256",
+          "release_history"
+        ],
+        "title": "ForecastAudit"
+      },
+      "ForecastCandidate": {
+        "properties": {
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "cv_mae": {
+            "type": "number",
+            "title": "Cv Mae"
+          },
+          "cv_rmse": {
+            "type": "number",
+            "title": "Cv Rmse"
+          },
+          "folds": {
+            "items": {
+              "$ref": "#/components/schemas/TemporalFold"
+            },
+            "type": "array",
+            "title": "Folds"
+          },
+          "test_metrics": {
+            "$ref": "#/components/schemas/ForecastMetrics"
+          }
+        },
+        "type": "object",
+        "required": [
+          "model",
+          "cv_mae",
+          "cv_rmse",
+          "folds",
+          "test_metrics"
+        ],
+        "title": "ForecastCandidate"
+      },
+      "ForecastMetrics": {
+        "properties": {
+          "mae": {
+            "type": "number",
+            "title": "Mae"
+          },
+          "rmse": {
+            "type": "number",
+            "title": "Rmse"
+          },
+          "smape": {
+            "type": "number",
+            "title": "Smape"
+          },
+          "wape": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wape"
+          },
+          "mase": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mase"
+          }
+        },
+        "type": "object",
+        "required": [
+          "mae",
+          "rmse",
+          "smape",
+          "wape",
+          "mase"
+        ],
+        "title": "ForecastMetrics"
+      },
+      "ForecastPoint": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period"
+          },
+          "predicted": {
+            "type": "number",
+            "title": "Predicted"
+          },
+          "lower": {
+            "type": "number",
+            "title": "Lower"
+          },
+          "upper": {
+            "type": "number",
+            "title": "Upper"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "predicted",
+          "lower",
+          "upper"
+        ],
+        "title": "ForecastPoint"
+      },
+      "ForecastResponse": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "snapshot_date": {
+            "type": "string",
+            "title": "Snapshot Date"
+          },
+          "series": {
+            "$ref": "#/components/schemas/ForecastSeries"
+          }
+        },
+        "type": "object",
+        "required": [
+          "run_id",
+          "snapshot_date",
+          "series"
+        ],
+        "title": "ForecastResponse"
+      },
+      "ForecastResults": {
+        "properties": {
+          "run_id": {
+            "type": "string",
+            "title": "Run Id"
+          },
+          "snapshot_date": {
+            "type": "string",
+            "title": "Snapshot Date"
+          },
+          "audit": {
+            "$ref": "#/components/schemas/ForecastAudit"
+          },
+          "series": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastSeries"
+            },
+            "type": "array",
+            "title": "Series"
+          }
+        },
+        "type": "object",
+        "required": [
+          "run_id",
+          "snapshot_date",
+          "audit",
+          "series"
+        ],
+        "title": "ForecastResults"
+      },
+      "ForecastSeries": {
+        "properties": {
+          "target": {
+            "type": "string",
+            "enum": [
+              "releases",
+              "additions"
+            ],
+            "title": "Target"
+          },
+          "group": {
+            "type": "string",
+            "enum": [
+              "all",
+              "movies",
+              "tv"
+            ],
+            "title": "Group"
+          },
+          "frequency": {
+            "type": "string",
+            "title": "Frequency"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "history": {
+            "items": {
+              "$ref": "#/components/schemas/HistoricalPoint"
+            },
+            "type": "array",
+            "title": "History"
+          },
+          "development_end": {
+            "type": "string",
+            "title": "Development End"
+          },
+          "test_start": {
+            "type": "string",
+            "title": "Test Start"
+          },
+          "test_end": {
+            "type": "string",
+            "title": "Test End"
+          },
+          "test": {
+            "items": {
+              "$ref": "#/components/schemas/BacktestPoint"
+            },
+            "type": "array",
+            "title": "Test"
+          },
+          "test_metrics": {
+            "$ref": "#/components/schemas/ForecastMetrics"
+          },
+          "comparison": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastCandidate"
+            },
+            "type": "array",
+            "title": "Comparison"
+          },
+          "forecast": {
+            "items": {
+              "$ref": "#/components/schemas/ForecastPoint"
+            },
+            "type": "array",
+            "title": "Forecast"
+          },
+          "forecast_origin": {
+            "type": "string",
+            "title": "Forecast Origin"
+          },
+          "band_width": {
+            "type": "number",
+            "title": "Band Width"
+          },
+          "band_quantile": {
+            "type": "number",
+            "title": "Band Quantile"
+          },
+          "band_residual_count": {
+            "type": "integer",
+            "title": "Band Residual Count"
+          },
+          "test_band_coverage": {
+            "type": "number",
+            "title": "Test Band Coverage"
+          },
+          "selected_at": {
+            "type": "string",
+            "title": "Selected At"
+          },
+          "evaluated_at": {
+            "type": "string",
+            "title": "Evaluated At"
+          },
+          "refit_policy": {
+            "type": "string",
+            "title": "Refit Policy"
+          }
+        },
+        "type": "object",
+        "required": [
+          "target",
+          "group",
+          "frequency",
+          "model",
+          "history",
+          "development_end",
+          "test_start",
+          "test_end",
+          "test",
+          "test_metrics",
+          "comparison",
+          "forecast",
+          "forecast_origin",
+          "band_width",
+          "band_quantile",
+          "band_residual_count",
+          "test_band_coverage",
+          "selected_at",
+          "evaluated_at",
+          "refit_policy"
+        ],
+        "title": "ForecastSeries"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HistoricalPoint": {
+        "properties": {
+          "period": {
+            "type": "string",
+            "title": "Period"
+          },
+          "value": {
+            "type": "number",
+            "title": "Value"
+          }
+        },
+        "type": "object",
+        "required": [
+          "period",
+          "value"
+        ],
+        "title": "HistoricalPoint"
+      },
+      "Partition": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "rows": {
+            "type": "integer",
+            "title": "Rows"
+          },
+          "purpose": {
+            "type": "string",
+            "title": "Purpose"
+          },
+          "segments": {
+            "items": {
+              "$ref": "#/components/schemas/Segment"
+            },
+            "type": "array",
+            "title": "Segments"
+          },
+          "metrics": {
+            "additionalProperties": {
+              "anyOf": [
+                {
+                  "type": "number"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "type": "object",
+            "title": "Metrics"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "rows",
+          "purpose",
+          "segments",
+          "metrics"
+        ],
+        "title": "Partition"
+      },
+      "ReleaseCohort": {
+        "properties": {
+          "year": {
+            "type": "integer",
+            "title": "Year"
+          },
+          "movies": {
+            "type": "integer",
+            "title": "Movies"
+          },
+          "tv": {
+            "type": "integer",
+            "title": "Tv"
+          },
+          "partial": {
+            "type": "boolean",
+            "title": "Partial"
+          }
+        },
+        "type": "object",
+        "required": [
+          "year",
+          "movies",
+          "tv",
+          "partial"
+        ],
+        "title": "ReleaseCohort"
+      },
+      "Segment": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "rows": {
+            "type": "integer",
+            "title": "Rows"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "rows"
+        ],
+        "title": "Segment"
+      },
+      "Stage": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "input_rows": {
+            "type": "integer",
+            "title": "Input Rows"
+          },
+          "output_rows": {
+            "type": "integer",
+            "title": "Output Rows"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "input_rows",
+          "output_rows",
+          "reason"
+        ],
+        "title": "Stage"
+      },
+      "TemporalFold": {
+        "properties": {
+          "mae": {
+            "type": "number",
+            "title": "Mae"
+          },
+          "rmse": {
+            "type": "number",
+            "title": "Rmse"
+          },
+          "smape": {
+            "type": "number",
+            "title": "Smape"
+          },
+          "wape": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Wape"
+          },
+          "mase": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Mase"
+          },
+          "origin": {
+            "type": "string",
+            "title": "Origin"
+          },
+          "fit_end": {
+            "type": "string",
+            "title": "Fit End"
+          },
+          "validation_start": {
+            "type": "string",
+            "title": "Validation Start"
+          },
+          "validation_end": {
+            "type": "string",
+            "title": "Validation End"
+          }
+        },
+        "type": "object",
+        "required": [
+          "mae",
+          "rmse",
+          "smape",
+          "wape",
+          "mase",
+          "origin",
+          "fit_end",
+          "validation_start",
+          "validation_end"
+        ],
+        "title": "TemporalFold"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      },
+      "Variable": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "role": {
+            "type": "string",
+            "title": "Role"
+          },
+          "reason": {
+            "type": "string",
+            "title": "Reason"
+          },
+          "treatment": {
+            "type": "string",
+            "title": "Treatment"
+          }
+        },
+        "type": "object",
+        "required": [
+          "name",
+          "role",
+          "reason",
+          "treatment"
+        ],
+        "title": "Variable"
+      }
+    }
+  }
+}

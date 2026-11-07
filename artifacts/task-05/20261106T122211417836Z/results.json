@@ -1,0 +1,5577 @@
+{
+  "run_id": "20261106T122211417836Z",
+  "snapshot_date": "2021-09-25",
+  "audit": {
+    "source_sha256": "90b02beeb554921f81d3b9a774d0f7766f6a65240162565f6b4082165dc2a1d3",
+    "raw_rows": 8790,
+    "entity_rows": 8783,
+    "duplicate_mapping": [
+      {
+        "removed_id": "s5965",
+        "retained_id": "s3997"
+      },
+      {
+        "removed_id": "s5966",
+        "retained_id": "s4523"
+      },
+      {
+        "removed_id": "s5967",
+        "retained_id": "s3963"
+      },
+      {
+        "removed_id": "s6530",
+        "retained_id": "s3372"
+      },
+      {
+        "removed_id": "s6706",
+        "retained_id": "s304"
+      },
+      {
+        "removed_id": "s7346",
+        "retained_id": "s160"
+      },
+      {
+        "removed_id": "s8023",
+        "retained_id": "s1271"
+      }
+    ],
+    "snapshot_date": "2021-09-25",
+    "date_anomalies": [
+      {
+        "show_id": "s5395",
+        "title": "Hans Teeuwen: Real Rancour",
+        "date_added": "7/1/2017",
+        "release_year": 2018
+      },
+      {
+        "show_id": "s7064",
+        "title": "Incoming",
+        "date_added": "10/26/2018",
+        "release_year": 2019
+      },
+      {
+        "show_id": "s7113",
+        "title": "Jack Taylor",
+        "date_added": "3/31/2013",
+        "release_year": 2016
+      },
+      {
+        "show_id": "s1552",
+        "title": "Hilda",
+        "date_added": "12/14/2020",
+        "release_year": 2021
+      },
+      {
+        "show_id": "s1697",
+        "title": "Polly Pocket",
+        "date_added": "11/15/2020",
+        "release_year": 2021
+      },
+      {
+        "show_id": "s2921",
+        "title": "Love Is Blind",
+        "date_added": "2/13/2020",
+        "release_year": 2021
+      },
+      {
+        "show_id": "s3169",
+        "title": "Fuller House",
+        "date_added": "12/6/2019",
+        "release_year": 2020
+      },
+      {
+        "show_id": "s3288",
+        "title": "Maradona in Mexico",
+        "date_added": "11/13/2019",
+        "release_year": 2020
+      },
+      {
+        "show_id": "s3370",
+        "title": "BoJack Horseman",
+        "date_added": "10/25/2019",
+        "release_year": 2020
+      },
+      {
+        "show_id": "s3434",
+        "title": "The Hook Up Plan",
+        "date_added": "10/11/2019",
+        "release_year": 2020
+      },
+      {
+        "show_id": "s4845",
+        "title": "Unbreakable Kimmy Schmidt",
+        "date_added": "5/30/2018",
+        "release_year": 2019
+      },
+      {
+        "show_id": "s4846",
+        "title": "Arrested Development",
+        "date_added": "5/29/2018",
+        "release_year": 2019
+      },
+      {
+        "show_id": "s5659",
+        "title": "Sense8",
+        "date_added": "12/23/2016",
+        "release_year": 2018
+      },
+      {
+        "show_id": "s5678",
+        "title": "Tokyo Trial",
+        "date_added": "12/13/2016",
+        "release_year": 2017
+      }
+    ],
+    "anomaly_policy": "Retain source dates; release year may describe a later season. No chronological imputation or date correction.",
+    "deduplication": "First source row per casefolded trimmed title/type/year; same entity policy as Task 4, independent outputs",
+    "annual_excluded_2021": 592,
+    "monthly_excluded_september_2021": 183,
+    "series_sha256": "7b4a8c492201cc20bb3053bf2e5969d14778156fe71029d0f8830bc5c0ec6f8f",
+    "release_history": [
+      {
+        "year": 1925,
+        "movies": 0,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1942,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1943,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1944,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1945,
+        "movies": 3,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1946,
+        "movies": 1,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1947,
+        "movies": 1,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1954,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1955,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1956,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1958,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1959,
+        "movies": 1,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1960,
+        "movies": 4,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1961,
+        "movies": 1,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1962,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1963,
+        "movies": 1,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1964,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1965,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1966,
+        "movies": 1,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1967,
+        "movies": 4,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1968,
+        "movies": 3,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1969,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1970,
+        "movies": 2,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1971,
+        "movies": 5,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1972,
+        "movies": 4,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1973,
+        "movies": 10,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1974,
+        "movies": 6,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1975,
+        "movies": 7,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1976,
+        "movies": 9,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1977,
+        "movies": 6,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1978,
+        "movies": 7,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1979,
+        "movies": 10,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1980,
+        "movies": 11,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1981,
+        "movies": 12,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1982,
+        "movies": 17,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1983,
+        "movies": 11,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1984,
+        "movies": 12,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1985,
+        "movies": 8,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1986,
+        "movies": 11,
+        "tv": 2,
+        "partial": false
+      },
+      {
+        "year": 1987,
+        "movies": 8,
+        "tv": 0,
+        "partial": false
+      },
+      {
+        "year": 1988,
+        "movies": 16,
+        "tv": 2,
+        "partial": false
+      },
+      {
+        "year": 1989,
+        "movies": 15,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1990,
+        "movies": 19,
+        "tv": 3,
+        "partial": false
+      },
+      {
+        "year": 1991,
+        "movies": 16,
+        "tv": 1,
+        "partial": false
+      },
+      {
+        "year": 1992,
+        "movies": 20,
+        "tv": 3,
+        "partial": false
+      },
+      {
+        "year": 1993,
+        "movies": 24,
+        "tv": 4,
+        "partial": false
+      },
+      {
+        "year": 1994,
+        "movies": 20,
+        "tv": 2,
+        "partial": false
+      },
+      {
+        "year": 1995,
+        "movies": 23,
+        "tv": 2,
+        "partial": false
+      },
+      {
+        "year": 1996,
+        "movies": 21,
+        "tv": 3,
+        "partial": false
+      },
+      {
+        "year": 1997,
+        "movies": 34,
+        "tv": 4,
+        "partial": false
+      },
+      {
+        "year": 1998,
+        "movies": 32,
+        "tv": 4,
+        "partial": false
+      },
+      {
+        "year": 1999,
+        "movies": 32,
+        "tv": 7,
+        "partial": false
+      },
+      {
+        "year": 2000,
+        "movies": 33,
+        "tv": 4,
+        "partial": false
+      },
+      {
+        "year": 2001,
+        "movies": 40,
+        "tv": 5,
+        "partial": false
+      },
+      {
+        "year": 2002,
+        "movies": 44,
+        "tv": 7,
+        "partial": false
+      },
+      {
+        "year": 2003,
+        "movies": 51,
+        "tv": 8,
+        "partial": false
+      },
+      {
+        "year": 2004,
+        "movies": 55,
+        "tv": 9,
+        "partial": false
+      },
+      {
+        "year": 2005,
+        "movies": 67,
+        "tv": 13,
+        "partial": false
+      },
+      {
+        "year": 2006,
+        "movies": 82,
+        "tv": 14,
+        "partial": false
+      },
+      {
+        "year": 2007,
+        "movies": 74,
+        "tv": 14,
+        "partial": false
+      },
+      {
+        "year": 2008,
+        "movies": 113,
+        "tv": 22,
+        "partial": false
+      },
+      {
+        "year": 2009,
+        "movies": 118,
+        "tv": 34,
+        "partial": false
+      },
+      {
+        "year": 2010,
+        "movies": 152,
+        "tv": 39,
+        "partial": false
+      },
+      {
+        "year": 2011,
+        "movies": 145,
+        "tv": 40,
+        "partial": false
+      },
+      {
+        "year": 2012,
+        "movies": 173,
+        "tv": 63,
+        "partial": false
+      },
+      {
+        "year": 2013,
+        "movies": 225,
+        "tv": 61,
+        "partial": false
+      },
+      {
+        "year": 2014,
+        "movies": 263,
+        "tv": 88,
+        "partial": false
+      },
+      {
+        "year": 2015,
+        "movies": 396,
+        "tv": 159,
+        "partial": false
+      },
+      {
+        "year": 2016,
+        "movies": 658,
+        "tv": 243,
+        "partial": false
+      },
+      {
+        "year": 2017,
+        "movies": 765,
+        "tv": 265,
+        "partial": false
+      },
+      {
+        "year": 2018,
+        "movies": 766,
+        "tv": 377,
+        "partial": false
+      },
+      {
+        "year": 2019,
+        "movies": 632,
+        "tv": 397,
+        "partial": false
+      },
+      {
+        "year": 2020,
+        "movies": 517,
+        "tv": 436,
+        "partial": false
+      },
+      {
+        "year": 2021,
+        "movies": 277,
+        "tv": 315,
+        "partial": true
+      }
+    ]
+  },
+  "series": [
+    {
+      "target": "releases",
+      "group": "all",
+      "frequency": "YS",
+      "model": "ridge_1",
+      "history": [
+        {
+          "period": "2000-01-01",
+          "value": 37.0
+        },
+        {
+          "period": "2001-01-01",
+          "value": 45.0
+        },
+        {
+          "period": "2002-01-01",
+          "value": 51.0
+        },
+        {
+          "period": "2003-01-01",
+          "value": 59.0
+        },
+        {
+          "period": "2004-01-01",
+          "value": 64.0
+        },
+        {
+          "period": "2005-01-01",
+          "value": 80.0
+        },
+        {
+          "period": "2006-01-01",
+          "value": 96.0
+        },
+        {
+          "period": "2007-01-01",
+          "value": 88.0
+        },
+        {
+          "period": "2008-01-01",
+          "value": 135.0
+        },
+        {
+          "period": "2009-01-01",
+          "value": 152.0
+        },
+        {
+          "period": "2010-01-01",
+          "value": 191.0
+        },
+        {
+          "period": "2011-01-01",
+          "value": 185.0
+        },
+        {
+          "period": "2012-01-01",
+          "value": 236.0
+        },
+        {
+          "period": "2013-01-01",
+          "value": 286.0
+        },
+        {
+          "period": "2014-01-01",
+          "value": 351.0
+        },
+        {
+          "period": "2015-01-01",
+          "value": 555.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 901.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 1030.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 1143.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 1029.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 953.0
+        }
+      ],
+      "development_end": "2016-01-01",
+      "test_start": "2017-01-01",
+      "test_end": "2020-01-01",
+      "test": [
+        {
+          "period": "2017-01-01",
+          "actual": 1030.0,
+          "predicted": 1376.2360846871425,
+          "lower": 1175.89514369155,
+          "upper": 1576.577025682735
+        },
+        {
+          "period": "2018-01-01",
+          "actual": 1143.0,
+          "predicted": 2260.3579728283894,
+          "lower": 2060.017031832797,
+          "upper": 2460.698913823982
+        },
+        {
+          "period": "2019-01-01",
+          "actual": 1029.0,
+          "predicted": 3767.005421993613,
+          "lower": 3566.6644809980203,
+          "upper": 3967.3463629892053
+        },
+        {
+          "period": "2020-01-01",
+          "actual": 953.0,
+          "predicted": 6332.877407658318,
+          "lower": 6132.536466662725,
+          "upper": 6533.218348653911
+        }
+      ],
+      "test_metrics": {
+        "mae": 2395.3692217918656,
+        "rmse": 3074.4155086000274,
+        "smape": 89.07462540502266,
+        "wape": 2.306011284516838,
+        "mase": 42.966264068015526
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 145.6,
+          "cv_rmse": 162.25262203143717,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 25.5,
+              "rmse": 32.101401838549044,
+              "smape": 12.134386367033734,
+              "wape": 0.12114014251781473,
+              "mase": 1.5
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 76.0,
+              "rmse": 80.00624975587844,
+              "smape": 33.55775098214241,
+              "wape": 0.29118773946360155,
+              "mase": 4.75
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 82.5,
+              "rmse": 88.670739254841,
+              "smape": 29.169685458236245,
+              "wape": 0.25902668759811615,
+              "mase": 4.361233480176211
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 167.0,
+              "rmse": 195.68597292601225,
+              "smape": 42.18981290494795,
+              "wape": 0.3686534216335541,
+              "mase": 7.837545126353791
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 377.0,
+              "rmse": 414.79874638190506,
+              "smape": 66.44626875145462,
+              "wape": 0.5178571428571429,
+              "mase": 15.432748538011698
+            }
+          ],
+          "test_metrics": {
+            "mae": 137.75,
+            "rmse": 153.5358264380011,
+            "smape": 13.97843880807937,
+            "wape": 0.1326113116726835,
+            "mase": 2.4708520179372195
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 181.0,
+          "cv_rmse": 194.9737498172412,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 51.16666666666666,
+              "rmse": 57.16885321377172,
+              "smape": 26.846934794284394,
+              "wape": 0.24307205067300075,
+              "mase": 3.009803921568627
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 85.0,
+              "rmse": 88.60022573334675,
+              "smape": 38.37263060564032,
+              "wape": 0.32567049808429116,
+              "mase": 5.3125
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 114.5,
+              "rmse": 119.02310700027957,
+              "smape": 43.22118036403751,
+              "wape": 0.35949764521193095,
+              "mase": 6.0528634361233475
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 217.33333333333337,
+              "rmse": 240.0786908031985,
+              "smape": 60.04694925647709,
+              "wape": 0.4797645327446653,
+              "mase": 10.199759326113119
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 437.0,
+              "rmse": 469.9978723356096,
+              "smape": 82.38017040316055,
+              "wape": 0.6002747252747253,
+              "mase": 17.88888888888889
+            }
+          ],
+          "test_metrics": {
+            "mae": 436.41666666666663,
+            "rmse": 441.6533645795585,
+            "smape": 52.939056336368395,
+            "wape": 0.4201363818692338,
+            "mase": 7.828101644245141
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 122.57391108891109,
+          "cv_rmse": 137.05498095745588,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 17.799999999999997,
+              "rmse": 18.160396471443015,
+              "smape": 8.569343551271515,
+              "wape": 0.08456057007125889,
+              "mase": 1.0470588235294116
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 55.81818181818181,
+              "rmse": 58.732971859689464,
+              "smape": 23.522384291661872,
+              "wape": 0.2138627655869035,
+              "mase": 3.4886363636363633
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 57.624999999999986,
+              "rmse": 62.50347212577695,
+              "smape": 19.39992655773631,
+              "wape": 0.18092621664050232,
+              "mase": 3.0462555066079284
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 138.26923076923077,
+              "rmse": 166.3141765618427,
+              "smape": 33.22277925671158,
+              "wape": 0.3052300899983019,
+              "mase": 6.489169675090253
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 343.3571428571429,
+              "rmse": 379.56388776852725,
+              "smape": 58.508165762177185,
+              "wape": 0.4716444270015699,
+              "mase": 14.055555555555557
+            }
+          ],
+          "test_metrics": {
+            "mae": 101.75,
+            "rmse": 113.61447971099459,
+            "smape": 9.776523825244226,
+            "wape": 0.09795427196149217,
+            "mase": 1.8251121076233183
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 109.22686852035545,
+          "cv_rmse": 121.22450147122402,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 46.333458115467565,
+              "rmse": 46.35862302933584,
+              "smape": 20.123575816748655,
+              "wape": 0.22011143997846824,
+              "mase": 2.7254975362039744
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 29.233394321628168,
+              "rmse": 33.49895768115473,
+              "smape": 11.4651705880306,
+              "wape": 0.11200534222846041,
+              "mase": 1.8270871451017605
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 51.07001442107682,
+              "rmse": 53.942063965373855,
+              "smape": 17.062980417393124,
+              "wape": 0.16034541419490367,
+              "mase": 2.6997364451670562
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 123.14058223466185,
+              "rmse": 145.33925273616876,
+              "smape": 29.026184209845823,
+              "wape": 0.2718335148668032,
+              "mase": 5.7791608990996535
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 296.3568935089429,
+              "rmse": 326.9836099440869,
+              "smape": 48.39544070579541,
+              "wape": 0.40708364492986665,
+              "mase": 12.131568740132167
+            }
+          ],
+          "test_metrics": {
+            "mae": 2395.3692217918656,
+            "rmse": 3074.4155086000274,
+            "smape": 89.07462540502266,
+            "wape": 2.306011284516838,
+            "mase": 42.966264068015526
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 123.94236717561758,
+          "cv_rmse": 136.70638731918194,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 11.066026838376487,
+              "rmse": 15.430812620088004,
+              "smape": 5.635047305821188,
+              "wape": 0.05257019875713296,
+              "mase": 0.6509427551986169
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 44.81221975384645,
+              "rmse": 47.59551160979609,
+              "smape": 18.396590731744322,
+              "wape": 0.17169432855879865,
+              "mase": 2.800763734615403
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 69.38269039006369,
+              "rmse": 73.29180230559881,
+              "smape": 23.967716655818,
+              "wape": 0.2178420420410163,
+              "mase": 3.667807421501164
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 151.37465464612907,
+              "rmse": 173.13531429030064,
+              "smape": 37.52696493458637,
+              "wape": 0.33416038553229377,
+              "mase": 7.1042256693129175
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 343.0762442496722,
+              "rmse": 374.07849577012604,
+              "smape": 58.751419994109305,
+              "wape": 0.4712585772660332,
+              "mase": 14.044056782150324
+            }
+          ],
+          "test_metrics": {
+            "mae": 719.3134378339103,
+            "rmse": 949.8277042040418,
+            "smape": 44.797904823017774,
+            "wape": 0.6924798438834274,
+            "mase": 12.902483189845924
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 209.75576180723684,
+          "cv_rmse": 221.50244676871063,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 66.40075933547423,
+              "rmse": 70.5466809362826,
+              "smape": 36.636451929816,
+              "wape": 0.31544303722315553,
+              "mase": 3.9059270197337783
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 109.45857750110461,
+              "rmse": 112.05014004718541,
+              "smape": 52.54164632455413,
+              "wape": 0.419381522992738,
+              "mase": 6.841161093819038
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 145.6426253080141,
+              "rmse": 149.25240719611384,
+              "smape": 58.661417652039084,
+              "wape": 0.4572766885651934,
+              "mase": 7.699169619806912
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 249.11735822188518,
+              "rmse": 268.19731623499933,
+              "smape": 72.87904318475748,
+              "wape": 0.5499279430946693,
+              "mase": 11.691428364203999
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 478.159488669706,
+              "rmse": 507.4656894289718,
+              "smape": 94.60726987401699,
+              "wape": 0.6568124844364093,
+              "mase": 19.573780237941182
+            }
+          ],
+          "test_metrics": {
+            "mae": 377.84691523042903,
+            "rmse": 385.7595534039281,
+            "smape": 44.42297456042189,
+            "wape": 0.3637515429414479,
+            "mase": 6.777523143146709
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 192.5499444444444,
+          "cv_rmse": 205.7926346088931,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 60.265138888888885,
+              "rmse": 65.43803913089899,
+              "smape": 32.57581998730253,
+              "wape": 0.2862951966217999,
+              "mase": 3.5450081699346403
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 93.65966269841269,
+              "rmse": 96.93880758901689,
+              "smape": 43.197282464260105,
+              "wape": 0.3588492823693973,
+              "mase": 5.853728918650793
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 127.93964285714284,
+              "rmse": 132.00303865598423,
+              "smape": 49.65220998033945,
+              "wape": 0.40169432608208117,
+              "mase": 6.763329137822529
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 227.80136904761906,
+              "rmse": 249.59459877964014,
+              "smape": 64.10444861357584,
+              "wape": 0.5028727793545674,
+              "mase": 10.69103898057418
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 453.08390873015867,
+              "rmse": 484.9886888889253,
+              "smape": 86.99068753752957,
+              "wape": 0.6223680064974707,
+              "mase": 18.5472945094217
+            }
+          ],
+          "test_metrics": {
+            "mae": 447.86936507936514,
+            "rmse": 452.9736809976863,
+            "smape": 54.71796534298643,
+            "wape": 0.431161843638378,
+            "mase": 8.033531212185922
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 192.5499444444444,
+          "cv_rmse": 205.7926346088931,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 60.265138888888885,
+              "rmse": 65.43803913089899,
+              "smape": 32.57581998730253,
+              "wape": 0.2862951966217999,
+              "mase": 3.5450081699346403
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 93.65966269841269,
+              "rmse": 96.93880758901689,
+              "smape": 43.197282464260105,
+              "wape": 0.3588492823693973,
+              "mase": 5.853728918650793
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 127.93964285714284,
+              "rmse": 132.00303865598423,
+              "smape": 49.65220998033945,
+              "wape": 0.40169432608208117,
+              "mase": 6.763329137822529
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 227.80136904761906,
+              "rmse": 249.59459877964014,
+              "smape": 64.10444861357584,
+              "wape": 0.5028727793545674,
+              "mase": 10.69103898057418
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 453.08390873015867,
+              "rmse": 484.9886888889253,
+              "smape": 86.99068753752957,
+              "wape": 0.6223680064974707,
+              "mase": 18.5472945094217
+            }
+          ],
+          "test_metrics": {
+            "mae": 447.86936507936514,
+            "rmse": 452.9736809976863,
+            "smape": 54.71796534298643,
+            "wape": 0.431161843638378,
+            "mase": 8.033531212185922
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-01-01",
+          "predicted": 938.733149044402,
+          "lower": 738.3922080488094,
+          "upper": 1139.0740900399946
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 969.1661245103705,
+          "lower": 768.8251835147779,
+          "upper": 1169.507065505963
+        },
+        {
+          "period": "2023-01-01",
+          "predicted": 1032.179839209417,
+          "lower": 831.8388982138243,
+          "upper": 1232.5207802050095
+        }
+      ],
+      "forecast_origin": "2020-01-01",
+      "band_width": 200.34094099559263,
+      "band_quantile": 0.8,
+      "band_residual_count": 10,
+      "test_band_coverage": 0.0,
+      "selected_at": "2026-11-06T12:22:13.672661+00:00",
+      "evaluated_at": "2026-11-06T12:22:14.304657+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    },
+    {
+      "target": "releases",
+      "group": "movies",
+      "frequency": "YS",
+      "model": "ridge_1",
+      "history": [
+        {
+          "period": "2000-01-01",
+          "value": 33.0
+        },
+        {
+          "period": "2001-01-01",
+          "value": 40.0
+        },
+        {
+          "period": "2002-01-01",
+          "value": 44.0
+        },
+        {
+          "period": "2003-01-01",
+          "value": 51.0
+        },
+        {
+          "period": "2004-01-01",
+          "value": 55.0
+        },
+        {
+          "period": "2005-01-01",
+          "value": 67.0
+        },
+        {
+          "period": "2006-01-01",
+          "value": 82.0
+        },
+        {
+          "period": "2007-01-01",
+          "value": 74.0
+        },
+        {
+          "period": "2008-01-01",
+          "value": 113.0
+        },
+        {
+          "period": "2009-01-01",
+          "value": 118.0
+        },
+        {
+          "period": "2010-01-01",
+          "value": 152.0
+        },
+        {
+          "period": "2011-01-01",
+          "value": 145.0
+        },
+        {
+          "period": "2012-01-01",
+          "value": 173.0
+        },
+        {
+          "period": "2013-01-01",
+          "value": 225.0
+        },
+        {
+          "period": "2014-01-01",
+          "value": 263.0
+        },
+        {
+          "period": "2015-01-01",
+          "value": 396.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 658.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 765.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 766.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 632.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 517.0
+        }
+      ],
+      "development_end": "2016-01-01",
+      "test_start": "2017-01-01",
+      "test_end": "2020-01-01",
+      "test": [
+        {
+          "period": "2017-01-01",
+          "actual": 765.0,
+          "predicted": 987.2133585295207,
+          "lower": 854.8095503491567,
+          "upper": 1119.6171667098847
+        },
+        {
+          "period": "2018-01-01",
+          "actual": 766.0,
+          "predicted": 1619.8443155390025,
+          "lower": 1487.4405073586386,
+          "upper": 1752.2481237193665
+        },
+        {
+          "period": "2019-01-01",
+          "actual": 632.0,
+          "predicted": 2710.281224515684,
+          "lower": 2577.8774163353196,
+          "upper": 2842.685032696048
+        },
+        {
+          "period": "2020-01-01",
+          "actual": 517.0,
+          "predicted": 4569.466852929574,
+          "lower": 4437.06304474921,
+          "upper": 4701.870661109938
+        }
+      ],
+      "test_metrics": {
+        "mae": 1801.7014378784452,
+        "rmse": 2319.4918265729334,
+        "smape": 95.16143177937018,
+        "wape": 2.689106623699172,
+        "mase": 44.011027490160494
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 101.5,
+          "cv_rmse": 113.53280675539725,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 14.0,
+              "rmse": 15.652475842498529,
+              "smape": 8.818440818440818,
+              "wape": 0.0880503144654088,
+              "mase": 1.037037037037037
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 54.0,
+              "rmse": 59.93329625508679,
+              "smape": 30.4266530681625,
+              "wape": 0.271356783919598,
+              "mase": 4.183098591549296
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 71.0,
+              "rmse": 73.49829930005184,
+              "smape": 33.707528468028215,
+              "wape": 0.29098360655737704,
+              "mase": 5.011764705882353
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 104.5,
+              "rmse": 123.86484569885033,
+              "smape": 35.32311712995961,
+              "wape": 0.3171471927162367,
+              "mase": 6.11936936936937
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 264.0,
+              "rmse": 294.71511668049874,
+              "smape": 63.07025911994451,
+              "wape": 0.5009487666034156,
+              "mase": 14.215384615384615
+            }
+          ],
+          "test_metrics": {
+            "mae": 95.5,
+            "rmse": 104.4868412767847,
+            "smape": 14.5595494539146,
+            "wape": 0.14253731343283582,
+            "mase": 2.332824427480916
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 126.9,
+          "cv_rmse": 137.17660706595976,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 31.33333333333333,
+              "rmse": 34.31876713662333,
+              "smape": 21.434573536666683,
+              "wape": 0.19706498951781967,
+              "mase": 2.3209876543209873
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 60.66666666666666,
+              "rmse": 66.0033669174872,
+              "smape": 34.98811464943127,
+              "wape": 0.30485762144053596,
+              "mase": 4.699530516431924
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 87.33333333333334,
+              "rmse": 89.37623348022176,
+              "smape": 43.24149963060724,
+              "wape": 0.3579234972677596,
+              "mase": 6.164705882352942
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 148.5,
+              "rmse": 162.70986448276577,
+              "smape": 55.73016690867644,
+              "wape": 0.45068285280728376,
+              "mase": 8.695945945945946
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 306.66666666666663,
+              "rmse": 333.4748033127007,
+              "smape": 78.33111492647443,
+              "wape": 0.5819101834282099,
+              "mase": 16.51282051282051
+            }
+          ],
+          "test_metrics": {
+            "mae": 231.0,
+            "rmse": 253.24790226179564,
+            "smape": 40.19643939328335,
+            "wape": 0.3447761194029851,
+            "mase": 5.642748091603053
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 84.9561138861139,
+          "cv_rmse": 96.5998783183316,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 10.850000000000009,
+              "rmse": 13.510181345933153,
+              "smape": 6.921237240162642,
+              "wape": 0.06823899371069188,
+              "mase": 0.8037037037037044
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 38.72727272727272,
+              "rmse": 44.01126827912585,
+              "smape": 20.70649376118451,
+              "wape": 0.19460941068981266,
+              "mase": 2.9999999999999996
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 53.5,
+              "rmse": 55.09638019971104,
+              "smape": 24.35919086517057,
+              "wape": 0.2192622950819672,
+              "mase": 3.7764705882352945
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 82.34615384615384,
+              "rmse": 101.36822851110347,
+              "smape": 26.36586278718071,
+              "wape": 0.24991245476829693,
+              "mase": 4.822072072072071
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 239.35714285714286,
+              "rmse": 269.0133332557845,
+              "smape": 55.22503571241226,
+              "wape": 0.4541881268636487,
+              "mase": 12.888461538461538
+            }
+          ],
+          "test_metrics": {
+            "mae": 134.5625,
+            "rmse": 169.09187013832155,
+            "smape": 19.56980770253325,
+            "wape": 0.20083955223880598,
+            "mase": 3.287022900763359
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 78.95967490413487,
+          "cv_rmse": 87.86820492151767,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 31.72905697076743,
+              "rmse": 31.779630437315802,
+              "smape": 18.189626739974333,
+              "wape": 0.19955381742621026,
+              "mase": 2.350300516353143
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 21.790388129173778,
+              "rmse": 27.406158751716095,
+              "smape": 10.804512344543989,
+              "wape": 0.10949943783504411,
+              "mase": 1.687987812823321
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 50.1502091590621,
+              "rmse": 51.07695806228988,
+              "smape": 22.716391548349193,
+              "wape": 0.2055336440945168,
+              "mase": 3.5400147641690896
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 84.61830173767703,
+              "rmse": 97.17876113098293,
+              "smape": 27.60315895075572,
+              "wape": 0.2568081995073658,
+              "mase": 4.955125777431538
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 206.51041852399402,
+              "rmse": 231.8995162252836,
+              "smape": 45.695185852235,
+              "wape": 0.391860376705871,
+              "mase": 11.1197917666766
+            }
+          ],
+          "test_metrics": {
+            "mae": 1801.7014378784452,
+            "rmse": 2319.4918265729334,
+            "smape": 95.16143177937018,
+            "wape": 2.689106623699172,
+            "mase": 44.011027490160494
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 89.01715472279872,
+          "cv_rmse": 98.38809325514356,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 9.962975773210701,
+              "rmse": 11.020789206909859,
+              "smape": 6.311515384765724,
+              "wape": 0.06266022498874654,
+              "mase": 0.7379982054230149
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 31.97082885859649,
+              "rmse": 37.630914222093196,
+              "smape": 16.644801207997222,
+              "wape": 0.16065743145023362,
+              "mase": 2.4766135031307144
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 61.05755799665455,
+              "rmse": 62.65518676331501,
+              "smape": 28.321998705993366,
+              "wape": 0.2502358934289121,
+              "mase": 4.309945270352086
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 102.2225866463093,
+              "rmse": 115.50509229254304,
+              "smape": 34.672736433449124,
+              "wape": 0.3102354678188446,
+              "mase": 5.986007326135229
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 239.8718243392226,
+              "rmse": 265.12848379085665,
+              "smape": 55.71525552770268,
+              "wape": 0.45516475206683604,
+              "mase": 12.91617515672737
+            }
+          ],
+          "test_metrics": {
+            "mae": 567.4708141698849,
+            "rmse": 739.1278622419918,
+            "smape": 53.720320870634495,
+            "wape": 0.846971364432664,
+            "mase": 13.861882483539173
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 148.6003957911091,
+          "cv_rmse": 157.1821702236191,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 44.428430039007594,
+              "rmse": 46.337626213239815,
+              "smape": 32.052657625626225,
+              "wape": 0.27942408829564525,
+              "mase": 3.290994817704266
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 78.82189709074962,
+              "rmse": 82.74686180709656,
+              "smape": 48.40645918115297,
+              "wape": 0.39608993512939505,
+              "mase": 6.105921605621449
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 111.47148928005599,
+              "rmse": 113.14478350863423,
+              "smape": 58.844865930557845,
+              "wape": 0.45685036590186884,
+              "mase": 7.8685757138863055
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 171.90608235806133,
+              "rmse": 183.69703368701667,
+              "smape": 68.19799111590733,
+              "wape": 0.5217180041215822,
+              "mase": 10.066572390336924
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 336.374080187671,
+              "rmse": 359.98454590210815,
+              "smape": 90.21990411629054,
+              "wape": 0.6382809870733794,
+              "mase": 18.11245047164382
+            }
+          ],
+          "test_metrics": {
+            "mae": 197.26997489686676,
+            "rmse": 230.40842031098984,
+            "smape": 33.19650557018619,
+            "wape": 0.2944327983535325,
+            "mase": 4.818808547099035
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 134.77333730158733,
+          "cv_rmse": 144.55683060579145,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 38.23256944444451,
+              "rmse": 40.715222783674804,
+              "smape": 26.89820573045375,
+              "wape": 0.24045641160027992,
+              "mase": 2.8320421810699634
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 66.61513888888894,
+              "rmse": 71.50927722460887,
+              "smape": 39.21433575930377,
+              "wape": 0.3347494416527082,
+              "mase": 5.16032766040689
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 97.58813492063493,
+              "rmse": 99.42054152582375,
+              "smape": 49.63627572945951,
+              "wape": 0.39995137262555297,
+              "mase": 6.888574229691877
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 154.90634920634918,
+              "rmse": 168.57706553514151,
+              "smape": 59.005647256394084,
+              "wape": 0.47012549076281995,
+              "mase": 9.071092521092519
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 316.5244940476191,
+              "rmse": 342.56204595970826,
+              "smape": 82.12049209334805,
+              "wape": 0.6006157382307763,
+              "mase": 17.043626602564103
+            }
+          ],
+          "test_metrics": {
+            "mae": 238.4289484126984,
+            "rmse": 260.0420416801583,
+            "smape": 41.82097278706718,
+            "wape": 0.35586410210850505,
+            "mase": 5.824218587180419
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 134.77333730158733,
+          "cv_rmse": 144.55683060579145,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 38.23256944444451,
+              "rmse": 40.715222783674804,
+              "smape": 26.89820573045375,
+              "wape": 0.24045641160027992,
+              "mase": 2.8320421810699634
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 66.61513888888894,
+              "rmse": 71.50927722460887,
+              "smape": 39.21433575930377,
+              "wape": 0.3347494416527082,
+              "mase": 5.16032766040689
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 97.58813492063493,
+              "rmse": 99.42054152582375,
+              "smape": 49.63627572945951,
+              "wape": 0.39995137262555297,
+              "mase": 6.888574229691877
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 154.90634920634918,
+              "rmse": 168.57706553514151,
+              "smape": 59.005647256394084,
+              "wape": 0.47012549076281995,
+              "mase": 9.071092521092519
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 316.5244940476191,
+              "rmse": 342.56204595970826,
+              "smape": 82.12049209334805,
+              "wape": 0.6006157382307763,
+              "mase": 17.043626602564103
+            }
+          ],
+          "test_metrics": {
+            "mae": 238.4289484126984,
+            "rmse": 260.0420416801583,
+            "smape": 41.82097278706718,
+            "wape": 0.35586410210850505,
+            "mase": 5.824218587180419
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-01-01",
+          "predicted": 477.2258993248542,
+          "lower": 344.8220911444901,
+          "upper": 609.6297075052182
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 503.3945701925245,
+          "lower": 370.9907620121604,
+          "upper": 635.7983783728886
+        },
+        {
+          "period": "2023-01-01",
+          "predicted": 578.5877320305174,
+          "lower": 446.1839238501533,
+          "upper": 710.9915402108815
+        }
+      ],
+      "forecast_origin": "2020-01-01",
+      "band_width": 132.40380818036408,
+      "band_quantile": 0.8,
+      "band_residual_count": 10,
+      "test_band_coverage": 0.0,
+      "selected_at": "2026-11-06T12:22:17.039779+00:00",
+      "evaluated_at": "2026-11-06T12:22:17.770033+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    },
+    {
+      "target": "releases",
+      "group": "tv",
+      "frequency": "YS",
+      "model": "ridge_1",
+      "history": [
+        {
+          "period": "2000-01-01",
+          "value": 4.0
+        },
+        {
+          "period": "2001-01-01",
+          "value": 5.0
+        },
+        {
+          "period": "2002-01-01",
+          "value": 7.0
+        },
+        {
+          "period": "2003-01-01",
+          "value": 8.0
+        },
+        {
+          "period": "2004-01-01",
+          "value": 9.0
+        },
+        {
+          "period": "2005-01-01",
+          "value": 13.0
+        },
+        {
+          "period": "2006-01-01",
+          "value": 14.0
+        },
+        {
+          "period": "2007-01-01",
+          "value": 14.0
+        },
+        {
+          "period": "2008-01-01",
+          "value": 22.0
+        },
+        {
+          "period": "2009-01-01",
+          "value": 34.0
+        },
+        {
+          "period": "2010-01-01",
+          "value": 39.0
+        },
+        {
+          "period": "2011-01-01",
+          "value": 40.0
+        },
+        {
+          "period": "2012-01-01",
+          "value": 63.0
+        },
+        {
+          "period": "2013-01-01",
+          "value": 61.0
+        },
+        {
+          "period": "2014-01-01",
+          "value": 88.0
+        },
+        {
+          "period": "2015-01-01",
+          "value": 159.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 243.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 265.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 377.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 397.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 436.0
+        }
+      ],
+      "development_end": "2016-01-01",
+      "test_start": "2017-01-01",
+      "test_end": "2020-01-01",
+      "test": [
+        {
+          "period": "2017-01-01",
+          "actual": 265.0,
+          "predicted": 371.9424531111559,
+          "lower": 302.6810256450568,
+          "upper": 441.20388057725495
+        },
+        {
+          "period": "2018-01-01",
+          "actual": 377.0,
+          "predicted": 608.6232782124717,
+          "lower": 539.3618507463727,
+          "upper": 677.8847056785708
+        },
+        {
+          "period": "2019-01-01",
+          "actual": 397.0,
+          "predicted": 989.4645348828404,
+          "lower": 920.2031074167414,
+          "upper": 1058.7259623489394
+        },
+        {
+          "period": "2020-01-01",
+          "actual": 436.0,
+          "predicted": 1615.2976842963399,
+          "lower": 1546.0362568302407,
+          "upper": 1684.559111762439
+        }
+      ],
+      "test_metrics": {
+        "mae": 527.5819876257019,
+        "rmse": 672.0943543446809,
+        "smape": 70.2562575773091,
+        "wape": 1.4307308139002086,
+        "mase": 34.73790865025198
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 44.7,
+          "cv_rmse": 49.83468271799226,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 12.5,
+              "rmse": 16.98528775146303,
+              "smape": 24.79523454951601,
+              "wape": 0.24271844660194175,
+              "mase": 3.5714285714285716
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 22.0,
+              "rmse": 22.02271554554524,
+              "smape": 43.12217629529943,
+              "wape": 0.3548387096774194,
+              "mase": 6.722222222222221
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 13.5,
+              "rmse": 17.7341478509682,
+              "smape": 18.169194616534927,
+              "wape": 0.18120805369127516,
+              "mase": 2.7457627118644066
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 62.5,
+              "rmse": 71.87836948623696,
+              "smape": 62.666259914582064,
+              "wape": 0.5060728744939271,
+              "mase": 13.31967213114754
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 113.0,
+              "rmse": 120.55289295574785,
+              "smape": 75.5727338331886,
+              "wape": 0.5621890547263682,
+              "mase": 17.977272727272727
+            }
+          ],
+          "test_metrics": {
+            "mae": 125.75,
+            "rmse": 140.89446405022449,
+            "smape": 39.21513252682249,
+            "wape": 0.3410169491525424,
+            "mase": 8.279835390946502
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 54.1,
+          "cv_rmse": 58.3996383650542,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 19.833333333333332,
+              "rmse": 22.926210134060778,
+              "smape": 44.726498526039954,
+              "wape": 0.3851132686084142,
+              "mase": 5.666666666666666
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 24.333333333333336,
+              "rmse": 24.353872610143778,
+              "smape": 48.81421156255594,
+              "wape": 0.39247311827956993,
+              "mase": 7.435185185185185
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 27.166666666666664,
+              "rmse": 30.336080461684194,
+              "smape": 42.66464569912846,
+              "wape": 0.3646532438478747,
+              "mase": 5.525423728813559
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 68.83333333333334,
+              "rmse": 77.44854922965168,
+              "smape": 72.19443917943634,
+              "wape": 0.5573549257759784,
+              "mase": 14.669398907103826
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 130.33333333333331,
+              "rmse": 136.9334793897306,
+              "smape": 93.40309000245236,
+              "wape": 0.6484245439469319,
+              "mase": 20.73484848484848
+            }
+          ],
+          "test_metrics": {
+            "mae": 205.41666666666666,
+            "rmse": 215.02138136577125,
+            "smape": 75.23763145178903,
+            "wape": 0.5570621468926553,
+            "mase": 13.525377229080933
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 39.561130536130534,
+          "cv_rmse": 43.47857623147608,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 9.75,
+              "rmse": 12.150102880222867,
+              "smape": 18.626633305532387,
+              "wape": 0.18932038834951456,
+              "mase": 2.7857142857142856
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 17.09090909090909,
+              "rmse": 17.293050245022116,
+              "smape": 32.00327999959506,
+              "wape": 0.2756598240469208,
+              "mase": 5.222222222222221
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 11.041666666666671,
+              "rmse": 11.78702794506647,
+              "smape": 14.795274825753346,
+              "wape": 0.14821029082774057,
+              "mase": 2.2457627118644075
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 55.92307692307692,
+              "rmse": 65.09065139794104,
+              "smape": 53.74894016278829,
+              "wape": 0.4528184366241046,
+              "mase": 11.918032786885245
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 104.0,
+              "rmse": 111.07204868912791,
+              "smape": 67.38266170386845,
+              "wape": 0.5174129353233831,
+              "mase": 16.545454545454547
+            }
+          ],
+          "test_metrics": {
+            "mae": 88.40625,
+            "rmse": 100.70919420229218,
+            "smape": 25.677113061827818,
+            "wape": 0.2397457627118644,
+            "mase": 5.820987654320987
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 32.4916102686024,
+          "cv_rmse": 35.75538184189105,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 9.830062967934865,
+              "rmse": 9.91127176740944,
+              "smape": 18.544963050799993,
+              "wape": 0.19087500908611388,
+              "mase": 2.8085894194099614
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 7.616254397683804,
+              "rmse": 9.37322647303887,
+              "smape": 13.37943041797426,
+              "wape": 0.1228428128658678,
+              "mase": 2.327188843736718
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 9.127430536984662,
+              "rmse": 9.673570865006834,
+              "smape": 12.662682221629021,
+              "wape": 0.1225158461340223,
+              "mase": 1.8564265498951853
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 41.79441398639379,
+              "rmse": 50.01209723617257,
+              "smape": 36.70705350198381,
+              "wape": 0.338416307582136,
+              "mase": 8.907006259395398
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 94.08988945401487,
+              "rmse": 99.80674286782755,
+              "smape": 59.15819475882848,
+              "wape": 0.46810890275629286,
+              "mase": 14.968846049502366
+            }
+          ],
+          "test_metrics": {
+            "mae": 527.5819876257019,
+            "rmse": 672.0943543446809,
+            "smape": 70.2562575773091,
+            "wape": 1.4307308139002086,
+            "mase": 34.73790865025198
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 35.93239194320872,
+          "cv_rmse": 39.41109059334166,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 5.486163130825169,
+              "rmse": 5.544657127120201,
+              "smape": 11.148806712510465,
+              "wape": 0.10652743943349842,
+              "mase": 1.5674751802357625
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 11.519179128882556,
+              "rmse": 12.097759164265794,
+              "smape": 20.5858504501942,
+              "wape": 0.18579321175617025,
+              "mase": 3.5197491782696697
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 9.148626383997936,
+              "rmse": 11.327053070007562,
+              "smape": 11.86577284128114,
+              "wape": 0.1228003541476233,
+              "mase": 1.8607375696266988
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 49.53303857716359,
+              "rmse": 57.895457459523435,
+              "smape": 45.8399829268283,
+              "wape": 0.40107723544262014,
+              "mase": 10.55622133611683
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 103.97495249517435,
+              "rmse": 110.19052614579132,
+              "smape": 67.59040686360287,
+              "wape": 0.5172883208715142,
+              "mase": 16.541469715141375
+            }
+          ],
+          "test_metrics": {
+            "mae": 159.3364044968954,
+            "rmse": 206.53682534942587,
+            "smape": 30.496207622474948,
+            "wape": 0.4320987240593773,
+            "mase": 10.491285892799697
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 61.10530022926416,
+          "cv_rmse": 64.7503905983413,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 21.797748901810373,
+              "rmse": 24.15673845558607,
+              "smape": 50.93622114917687,
+              "wape": 0.42325726022932764,
+              "mase": 6.227928257660106
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 30.416385796962835,
+              "rmse": 30.43931278682544,
+              "smape": 64.98654510550597,
+              "wape": 0.49058686769294896,
+              "mase": 9.293895660183088
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 33.80085312932768,
+              "rmse": 36.25558852078062,
+              "smape": 56.76287459578398,
+              "wape": 0.45370272656815674,
+              "mase": 6.874749789015798
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 77.34842336603887,
+              "rmse": 84.70544379813144,
+              "smape": 86.42859912403499,
+              "wape": 0.6263030232067925,
+              "mase": 16.484090225549267
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 142.16308995218105,
+              "rmse": 148.19486943038297,
+              "smape": 107.01556656083328,
+              "wape": 0.707279054488463,
+              "mase": 22.61685521966517
+            }
+          ],
+          "test_metrics": {
+            "mae": 181.69752205321385,
+            "rmse": 188.75957195650673,
+            "smape": 64.00049744625167,
+            "wape": 0.49273904285617315,
+            "mase": 11.963622851240418
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 56.9988492063492,
+          "cv_rmse": 61.09025795627224,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 21.028124999999996,
+              "rmse": 23.967311927198363,
+              "smape": 48.320371113356344,
+              "wape": 0.40831310679611643,
+              "mase": 6.008035714285713
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 26.469305555555565,
+              "rmse": 26.488188624240895,
+              "smape": 54.26360264727726,
+              "wape": 0.426924283154122,
+              "mase": 8.087843364197534
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 30.8405753968254,
+              "rmse": 33.6658742765916,
+              "smape": 50.24681391275645,
+              "wape": 0.41396745499094495,
+              "mase": 6.272659402744149
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 72.00739087301588,
+              "rmse": 80.2827150782738,
+              "smape": 77.24574725028162,
+              "wape": 0.5830557965426387,
+              "mase": 15.345837399167317
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 134.64884920634918,
+              "rmse": 141.04719987505658,
+              "smape": 98.21612222307053,
+              "wape": 0.6698947721708914,
+              "mase": 21.421407828282824
+            }
+          ],
+          "test_metrics": {
+            "mae": 208.00886904761907,
+            "rmse": 217.49914276260847,
+            "smape": 76.59596312773252,
+            "wape": 0.5640918482647297,
+            "mase": 13.696057221242407
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 56.9988492063492,
+          "cv_rmse": 61.09025795627224,
+          "folds": [
+            {
+              "origin": "2010-01-01",
+              "fit_end": "2010-01-01",
+              "validation_start": "2011-01-01",
+              "validation_end": "2012-01-01",
+              "mae": 21.028124999999996,
+              "rmse": 23.967311927198363,
+              "smape": 48.320371113356344,
+              "wape": 0.40831310679611643,
+              "mase": 6.008035714285713
+            },
+            {
+              "origin": "2011-01-01",
+              "fit_end": "2011-01-01",
+              "validation_start": "2012-01-01",
+              "validation_end": "2013-01-01",
+              "mae": 26.469305555555565,
+              "rmse": 26.488188624240895,
+              "smape": 54.26360264727726,
+              "wape": 0.426924283154122,
+              "mase": 8.087843364197534
+            },
+            {
+              "origin": "2012-01-01",
+              "fit_end": "2012-01-01",
+              "validation_start": "2013-01-01",
+              "validation_end": "2014-01-01",
+              "mae": 30.8405753968254,
+              "rmse": 33.6658742765916,
+              "smape": 50.24681391275645,
+              "wape": 0.41396745499094495,
+              "mase": 6.272659402744149
+            },
+            {
+              "origin": "2013-01-01",
+              "fit_end": "2013-01-01",
+              "validation_start": "2014-01-01",
+              "validation_end": "2015-01-01",
+              "mae": 72.00739087301588,
+              "rmse": 80.2827150782738,
+              "smape": 77.24574725028162,
+              "wape": 0.5830557965426387,
+              "mase": 15.345837399167317
+            },
+            {
+              "origin": "2014-01-01",
+              "fit_end": "2014-01-01",
+              "validation_start": "2015-01-01",
+              "validation_end": "2016-01-01",
+              "mae": 134.64884920634918,
+              "rmse": 141.04719987505658,
+              "smape": 98.21612222307053,
+              "wape": 0.6698947721708914,
+              "mase": 21.421407828282824
+            }
+          ],
+          "test_metrics": {
+            "mae": 208.00886904761907,
+            "rmse": 217.49914276260847,
+            "smape": 76.59596312773252,
+            "wape": 0.5640918482647297,
+            "mase": 13.696057221242407
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-01-01",
+          "predicted": 520.045497984737,
+          "lower": 450.784070518638,
+          "upper": 589.3069254508362
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 585.0784090533652,
+          "lower": 515.8169815872661,
+          "upper": 654.3398365194644
+        },
+        {
+          "period": "2023-01-01",
+          "predicted": 659.7570850184024,
+          "lower": 590.4956575523033,
+          "upper": 729.0185124845016
+        }
+      ],
+      "forecast_origin": "2020-01-01",
+      "band_width": 69.26142746609906,
+      "band_quantile": 0.8,
+      "band_residual_count": 10,
+      "test_band_coverage": 0.0,
+      "selected_at": "2026-11-06T12:22:20.819298+00:00",
+      "evaluated_at": "2026-11-06T12:22:21.502686+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    },
+    {
+      "target": "additions",
+      "group": "all",
+      "frequency": "MS",
+      "model": "ridge_100",
+      "history": [
+        {
+          "period": "2015-01-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-02-01",
+          "value": 4.0
+        },
+        {
+          "period": "2015-03-01",
+          "value": 5.0
+        },
+        {
+          "period": "2015-04-01",
+          "value": 5.0
+        },
+        {
+          "period": "2015-05-01",
+          "value": 6.0
+        },
+        {
+          "period": "2015-06-01",
+          "value": 6.0
+        },
+        {
+          "period": "2015-07-01",
+          "value": 7.0
+        },
+        {
+          "period": "2015-08-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-09-01",
+          "value": 7.0
+        },
+        {
+          "period": "2015-10-01",
+          "value": 14.0
+        },
+        {
+          "period": "2015-11-01",
+          "value": 4.0
+        },
+        {
+          "period": "2015-12-01",
+          "value": 21.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 43.0
+        },
+        {
+          "period": "2016-02-01",
+          "value": 15.0
+        },
+        {
+          "period": "2016-03-01",
+          "value": 17.0
+        },
+        {
+          "period": "2016-04-01",
+          "value": 22.0
+        },
+        {
+          "period": "2016-05-01",
+          "value": 13.0
+        },
+        {
+          "period": "2016-06-01",
+          "value": 18.0
+        },
+        {
+          "period": "2016-07-01",
+          "value": 28.0
+        },
+        {
+          "period": "2016-08-01",
+          "value": 33.0
+        },
+        {
+          "period": "2016-09-01",
+          "value": 47.0
+        },
+        {
+          "period": "2016-10-01",
+          "value": 51.0
+        },
+        {
+          "period": "2016-11-01",
+          "value": 44.0
+        },
+        {
+          "period": "2016-12-01",
+          "value": 95.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 71.0
+        },
+        {
+          "period": "2017-02-01",
+          "value": 82.0
+        },
+        {
+          "period": "2017-03-01",
+          "value": 124.0
+        },
+        {
+          "period": "2017-04-01",
+          "value": 92.0
+        },
+        {
+          "period": "2017-05-01",
+          "value": 86.0
+        },
+        {
+          "period": "2017-06-01",
+          "value": 94.0
+        },
+        {
+          "period": "2017-07-01",
+          "value": 79.0
+        },
+        {
+          "period": "2017-08-01",
+          "value": 115.0
+        },
+        {
+          "period": "2017-09-01",
+          "value": 113.0
+        },
+        {
+          "period": "2017-10-01",
+          "value": 126.0
+        },
+        {
+          "period": "2017-11-01",
+          "value": 85.0
+        },
+        {
+          "period": "2017-12-01",
+          "value": 118.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 129.0
+        },
+        {
+          "period": "2018-02-01",
+          "value": 86.0
+        },
+        {
+          "period": "2018-03-01",
+          "value": 173.0
+        },
+        {
+          "period": "2018-04-01",
+          "value": 115.0
+        },
+        {
+          "period": "2018-05-01",
+          "value": 97.0
+        },
+        {
+          "period": "2018-06-01",
+          "value": 78.0
+        },
+        {
+          "period": "2018-07-01",
+          "value": 151.0
+        },
+        {
+          "period": "2018-08-01",
+          "value": 163.0
+        },
+        {
+          "period": "2018-09-01",
+          "value": 124.0
+        },
+        {
+          "period": "2018-10-01",
+          "value": 190.0
+        },
+        {
+          "period": "2018-11-01",
+          "value": 154.0
+        },
+        {
+          "period": "2018-12-01",
+          "value": 185.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 152.0
+        },
+        {
+          "period": "2019-02-01",
+          "value": 148.0
+        },
+        {
+          "period": "2019-03-01",
+          "value": 170.0
+        },
+        {
+          "period": "2019-04-01",
+          "value": 162.0
+        },
+        {
+          "period": "2019-05-01",
+          "value": 139.0
+        },
+        {
+          "period": "2019-06-01",
+          "value": 168.0
+        },
+        {
+          "period": "2019-07-01",
+          "value": 157.0
+        },
+        {
+          "period": "2019-08-01",
+          "value": 131.0
+        },
+        {
+          "period": "2019-09-01",
+          "value": 123.0
+        },
+        {
+          "period": "2019-10-01",
+          "value": 192.0
+        },
+        {
+          "period": "2019-11-01",
+          "value": 255.0
+        },
+        {
+          "period": "2019-12-01",
+          "value": 215.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 205.0
+        },
+        {
+          "period": "2020-02-01",
+          "value": 114.0
+        },
+        {
+          "period": "2020-03-01",
+          "value": 137.0
+        },
+        {
+          "period": "2020-04-01",
+          "value": 177.0
+        },
+        {
+          "period": "2020-05-01",
+          "value": 157.0
+        },
+        {
+          "period": "2020-06-01",
+          "value": 156.0
+        },
+        {
+          "period": "2020-07-01",
+          "value": 146.0
+        },
+        {
+          "period": "2020-08-01",
+          "value": 129.0
+        },
+        {
+          "period": "2020-09-01",
+          "value": 168.0
+        },
+        {
+          "period": "2020-10-01",
+          "value": 167.0
+        },
+        {
+          "period": "2020-11-01",
+          "value": 154.0
+        },
+        {
+          "period": "2020-12-01",
+          "value": 169.0
+        },
+        {
+          "period": "2021-01-01",
+          "value": 132.0
+        },
+        {
+          "period": "2021-02-01",
+          "value": 109.0
+        },
+        {
+          "period": "2021-03-01",
+          "value": 112.0
+        },
+        {
+          "period": "2021-04-01",
+          "value": 188.0
+        },
+        {
+          "period": "2021-05-01",
+          "value": 132.0
+        },
+        {
+          "period": "2021-06-01",
+          "value": 207.0
+        },
+        {
+          "period": "2021-07-01",
+          "value": 257.0
+        },
+        {
+          "period": "2021-08-01",
+          "value": 178.0
+        }
+      ],
+      "development_end": "2021-02-01",
+      "test_start": "2021-03-01",
+      "test_end": "2021-08-01",
+      "test": [
+        {
+          "period": "2021-03-01",
+          "actual": 112.0,
+          "predicted": 142.9579737576654,
+          "lower": 110.25443107472222,
+          "upper": 175.66151644060858
+        },
+        {
+          "period": "2021-04-01",
+          "actual": 188.0,
+          "predicted": 143.16720447406698,
+          "lower": 110.4636617911238,
+          "upper": 175.87074715701016
+        },
+        {
+          "period": "2021-05-01",
+          "actual": 132.0,
+          "predicted": 141.37504978278207,
+          "lower": 108.67150709983889,
+          "upper": 174.07859246572525
+        },
+        {
+          "period": "2021-06-01",
+          "actual": 207.0,
+          "predicted": 146.93442198390318,
+          "lower": 114.23087930096,
+          "upper": 179.63796466684636
+        },
+        {
+          "period": "2021-07-01",
+          "actual": 257.0,
+          "predicted": 145.88176709907967,
+          "lower": 113.17822441613649,
+          "upper": 178.58530978202285
+        },
+        {
+          "period": "2021-08-01",
+          "actual": 178.0,
+          "predicted": 145.70644625562556,
+          "lower": 113.00290357268238,
+          "upper": 178.40998893856874
+        }
+      ],
+      "test_metrics": {
+        "mae": 48.107197287962016,
+        "rmse": 57.81331480312566,
+        "smape": 27.87914296649032,
+        "wape": 0.26875529211151966,
+        "mase": 1.1897272564234722
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 35.04166666666667,
+          "cv_rmse": 39.33348858694407,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 28.5,
+              "rmse": 30.596840795524407,
+              "smape": 16.923461684014796,
+              "wape": 0.18210862619808307,
+              "mase": 0.6432601880877743
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 41.833333333333336,
+              "rmse": 48.07806152498247,
+              "smape": 23.576232624451094,
+              "wape": 0.23392357875116496,
+              "mase": 0.943609022556391
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 57.333333333333336,
+              "rmse": 64.12747721011121,
+              "smape": 32.142457265330485,
+              "wape": 0.36363636363636365,
+              "mase": 1.352999016715831
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 12.5,
+              "rmse": 14.53157481715821,
+              "smape": 8.179793412705417,
+              "wape": 0.08038585209003216,
+              "mase": 0.30695770804911326
+            }
+          ],
+          "test_metrics": {
+            "mae": 70.0,
+            "rmse": 84.70340410318033,
+            "smape": 44.33066322396288,
+            "wape": 0.39106145251396646,
+            "mase": 1.7311527722377342
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 34.347222222222214,
+          "cv_rmse": 40.11254291064067,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 19.833333333333343,
+              "rmse": 22.74374150789131,
+              "smape": 12.157209860675351,
+              "wape": 0.126730564430245,
+              "mase": 0.4476489028213168
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 42.05555555555555,
+              "rmse": 51.96526617740824,
+              "smape": 23.662612268117567,
+              "wape": 0.23516620068344204,
+              "mase": 0.9486215538847116
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 62.99999999999998,
+              "rmse": 69.24032222789133,
+              "smape": 34.65071028558245,
+              "wape": 0.39957716701902735,
+              "mase": 1.4867256637168136
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 12.5,
+              "rmse": 16.500841729371807,
+              "smape": 8.170921504778091,
+              "wape": 0.08038585209003216,
+              "mase": 0.30695770804911326
+            }
+          ],
+          "test_metrics": {
+            "mae": 52.11111111111112,
+            "rmse": 63.77129274036852,
+            "smape": 30.545369503546052,
+            "wape": 0.29112352576039735,
+            "mase": 1.2887470637769802
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 40.07150310871418,
+          "cv_rmse": 44.53512853602364,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 42.20212765957447,
+              "rmse": 43.82095982855419,
+              "smape": 23.924730117411514,
+              "wape": 0.26966215756916595,
+              "mase": 0.9525245114386715
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 37.10691823899371,
+              "rmse": 42.88641891112257,
+              "smape": 20.968700745735955,
+              "wape": 0.20749441699344107,
+              "mase": 0.8369981557667753
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 70.02824858757062,
+              "rmse": 76.24626523176455,
+              "smape": 37.632997679282546,
+              "wape": 0.4441537965385029,
+              "mase": 1.6525840374647933
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 10.94871794871795,
+              "rmse": 15.186870172653276,
+              "smape": 7.215221660694302,
+              "wape": 0.07040976172808971,
+              "mase": 0.26886346940917205
+            }
+          ],
+          "test_metrics": {
+            "mae": 64.82191780821917,
+            "rmse": 79.57403799206068,
+            "smape": 40.05875032461012,
+            "wape": 0.3621336190403306,
+            "mase": 1.6030948959352167
+          }
+        },
+        {
+          "model": "seasonal_naive",
+          "cv_mae": 34.75,
+          "cv_rmse": 44.62512132480041,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 44.5,
+              "rmse": 52.36888389110465,
+              "smape": 35.634966831147786,
+              "wape": 0.28434504792332266,
+              "mase": 1.0043887147335422
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 28.666666666666668,
+              "rmse": 45.02961988143656,
+              "smape": 15.318400242228378,
+              "wape": 0.1602982292637465,
+              "mase": 0.6466165413533834
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 27.5,
+              "rmse": 30.948882586182872,
+              "smape": 17.59392894186351,
+              "wape": 0.1744186046511628,
+              "mase": 0.6489675516224189
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 38.333333333333336,
+              "rmse": 50.153098940477584,
+              "smape": 21.166947608975757,
+              "wape": 0.2465166130760986,
+              "mase": 0.941336971350614
+            }
+          ],
+          "test_metrics": {
+            "mae": 45.333333333333336,
+            "rmse": 55.81815714144159,
+            "smape": 26.41943381681459,
+            "wape": 0.2532588454376164,
+            "mase": 1.1211275096396756
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 36.03624483226497,
+          "cv_rmse": 41.8012645651987,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 18.51102363693171,
+              "rmse": 21.277741682653694,
+              "smape": 11.254729460500727,
+              "wape": 0.11828130119445182,
+              "mase": 0.4178036682943834
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 33.186688393058944,
+              "rmse": 40.01788828768755,
+              "smape": 19.083812710173923,
+              "wape": 0.1855732808558748,
+              "mase": 0.7485719186404273
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 49.85781761263405,
+              "rmse": 59.37928566305436,
+              "smape": 28.55441548498852,
+              "wape": 0.3162229446890109,
+              "mase": 1.1765856663748449
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 42.589449686435174,
+              "rmse": 46.5301426273992,
+              "smape": 23.876255167385192,
+              "wape": 0.27388713624717154,
+              "mase": 1.0458527890256932
+            }
+          ],
+          "test_metrics": {
+            "mae": 69.73473658435748,
+            "rmse": 84.00028772038465,
+            "smape": 44.156056653641336,
+            "wape": 0.3895795339908239,
+            "mase": 1.7245926079896943
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 31.592049641648323,
+          "cv_rmse": 37.156535227981614,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 16.076461686931637,
+              "rmse": 18.302099522117008,
+              "smape": 9.947444936933623,
+              "wape": 0.102724994804675,
+              "mase": 0.3628543076674225
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 31.7008890036084,
+              "rmse": 39.09351514394344,
+              "smape": 18.168218299670162,
+              "wape": 0.17726498976854652,
+              "mase": 0.7150576466979338
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 43.19431052375663,
+              "rmse": 52.31207240328841,
+              "smape": 25.44843133503339,
+              "wape": 0.2739596861971879,
+              "mase": 1.0193347616225752
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 35.39653735229663,
+              "rmse": 38.91845384257759,
+              "smape": 20.36598004905553,
+              "wape": 0.22763046528808123,
+              "mase": 0.8692191982828641
+            }
+          ],
+          "test_metrics": {
+            "mae": 50.39497144229821,
+            "rmse": 62.368627187761824,
+            "smape": 29.33099620540337,
+            "wape": 0.2815361533089285,
+            "mase": 1.2463056359882285
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 23.202340729053425,
+          "cv_rmse": 28.953093528660673,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 11.171204129032233,
+              "rmse": 14.832188776878526,
+              "smape": 7.179577934199092,
+              "wape": 0.07138149603215485,
+              "mase": 0.2521400304985332
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 39.417637386353455,
+              "rmse": 48.804955253286046,
+              "smape": 22.057433907626365,
+              "wape": 0.2204154933067295,
+              "mase": 0.889119640293687
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 27.14321405112287,
+              "rmse": 34.90379663129464,
+              "smape": 17.13320492893533,
+              "wape": 0.17215569165617045,
+              "mase": 0.640547824215289
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 15.077307349705137,
+              "rmse": 17.271433453183477,
+              "smape": 9.616945876749666,
+              "wape": 0.09696017588234815,
+              "mase": 0.3702476566094031
+            }
+          ],
+          "test_metrics": {
+            "mae": 48.107197287962016,
+            "rmse": 57.81331480312566,
+            "smape": 27.87914296649032,
+            "wape": 0.26875529211151966,
+            "mase": 1.1897272564234722
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 28.358509994205193,
+          "cv_rmse": 33.614194556489835,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 14.231201373517536,
+              "rmse": 18.62052057932002,
+              "smape": 9.35451526011528,
+              "wape": 0.09093419407998425,
+              "mase": 0.3212057990261011
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 41.6170335798461,
+              "rmse": 49.874091255368455,
+              "smape": 23.419678890930566,
+              "wape": 0.23271407407183284,
+              "mase": 0.9387300807484082
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 43.33862674430693,
+              "rmse": 50.11320403736692,
+              "smape": 25.622165112949816,
+              "wape": 0.27487501106325746,
+              "mase": 1.0227404541429364
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 14.2471782791502,
+              "rmse": 15.848962353903932,
+              "smape": 9.18188935020559,
+              "wape": 0.09162172526784695,
+              "mase": 0.34986249525880436
+            }
+          ],
+          "test_metrics": {
+            "mae": 47.09640118898134,
+            "rmse": 54.8205285487565,
+            "smape": 27.275636457869222,
+            "wape": 0.263108386530622,
+            "mase": 1.164729506867508
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 28.3903871803351,
+          "cv_rmse": 33.92583087719839,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 13.179477513227496,
+              "rmse": 17.68116705656713,
+              "smape": 8.578365641525656,
+              "wape": 0.08421391382253991,
+              "mase": 0.29746783101955476
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 41.69744047619048,
+              "rmse": 50.02288493246973,
+              "smape": 23.467241883520828,
+              "wape": 0.23316369324990016,
+              "mase": 0.9405437701396349
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 42.652079475308675,
+              "rmse": 49.48739159449137,
+              "smape": 25.28442330051079,
+              "wape": 0.2705205886383214,
+              "mase": 1.0065387486798507
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 16.03255125661376,
+              "rmse": 18.511879925265355,
+              "smape": 10.315759223985875,
+              "wape": 0.10310322351520104,
+              "mase": 0.39370521503280725
+            }
+          ],
+          "test_metrics": {
+            "mae": 47.47994984567904,
+            "rmse": 56.28468452600979,
+            "smape": 27.484133808577493,
+            "wape": 0.26525111645630745,
+            "mase": 1.1742149543007978
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-09-01",
+          "predicted": 182.91121376742706,
+          "lower": 150.20767108448388,
+          "upper": 215.61475645037024
+        },
+        {
+          "period": "2021-10-01",
+          "predicted": 187.622768061506,
+          "lower": 154.91922537856283,
+          "upper": 220.3263107444492
+        },
+        {
+          "period": "2021-11-01",
+          "predicted": 174.3398497389323,
+          "lower": 141.6363070559891,
+          "upper": 207.04339242187547
+        },
+        {
+          "period": "2021-12-01",
+          "predicted": 179.83766665325783,
+          "lower": 147.13412397031465,
+          "upper": 212.541209336201
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 178.8739735816537,
+          "lower": 146.17043089871052,
+          "upper": 211.57751626459688
+        },
+        {
+          "period": "2022-02-01",
+          "predicted": 167.88447779125866,
+          "lower": 135.18093510831548,
+          "upper": 200.58802047420184
+        }
+      ],
+      "forecast_origin": "2021-08-01",
+      "band_width": 32.70354268294318,
+      "band_quantile": 0.8,
+      "band_residual_count": 24,
+      "test_band_coverage": 0.5,
+      "selected_at": "2026-11-06T12:22:25.162366+00:00",
+      "evaluated_at": "2026-11-06T12:22:26.120687+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    },
+    {
+      "target": "additions",
+      "group": "movies",
+      "frequency": "MS",
+      "model": "ridge_100",
+      "history": [
+        {
+          "period": "2015-01-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-02-01",
+          "value": 3.0
+        },
+        {
+          "period": "2015-03-01",
+          "value": 3.0
+        },
+        {
+          "period": "2015-04-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-05-01",
+          "value": 5.0
+        },
+        {
+          "period": "2015-06-01",
+          "value": 4.0
+        },
+        {
+          "period": "2015-07-01",
+          "value": 5.0
+        },
+        {
+          "period": "2015-08-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-09-01",
+          "value": 6.0
+        },
+        {
+          "period": "2015-10-01",
+          "value": 10.0
+        },
+        {
+          "period": "2015-11-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-12-01",
+          "value": 14.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 15.0
+        },
+        {
+          "period": "2016-02-01",
+          "value": 9.0
+        },
+        {
+          "period": "2016-03-01",
+          "value": 14.0
+        },
+        {
+          "period": "2016-04-01",
+          "value": 14.0
+        },
+        {
+          "period": "2016-05-01",
+          "value": 9.0
+        },
+        {
+          "period": "2016-06-01",
+          "value": 11.0
+        },
+        {
+          "period": "2016-07-01",
+          "value": 19.0
+        },
+        {
+          "period": "2016-08-01",
+          "value": 22.0
+        },
+        {
+          "period": "2016-09-01",
+          "value": 28.0
+        },
+        {
+          "period": "2016-10-01",
+          "value": 32.0
+        },
+        {
+          "period": "2016-11-01",
+          "value": 26.0
+        },
+        {
+          "period": "2016-12-01",
+          "value": 52.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 57.0
+        },
+        {
+          "period": "2017-02-01",
+          "value": 65.0
+        },
+        {
+          "period": "2017-03-01",
+          "value": 86.0
+        },
+        {
+          "period": "2017-04-01",
+          "value": 65.0
+        },
+        {
+          "period": "2017-05-01",
+          "value": 63.0
+        },
+        {
+          "period": "2017-06-01",
+          "value": 65.0
+        },
+        {
+          "period": "2017-07-01",
+          "value": 45.0
+        },
+        {
+          "period": "2017-08-01",
+          "value": 77.0
+        },
+        {
+          "period": "2017-09-01",
+          "value": 81.0
+        },
+        {
+          "period": "2017-10-01",
+          "value": 97.0
+        },
+        {
+          "period": "2017-11-01",
+          "value": 55.0
+        },
+        {
+          "period": "2017-12-01",
+          "value": 80.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 105.0
+        },
+        {
+          "period": "2018-02-01",
+          "value": 63.0
+        },
+        {
+          "period": "2018-03-01",
+          "value": 138.0
+        },
+        {
+          "period": "2018-04-01",
+          "value": 87.0
+        },
+        {
+          "period": "2018-05-01",
+          "value": 70.0
+        },
+        {
+          "period": "2018-06-01",
+          "value": 50.0
+        },
+        {
+          "period": "2018-07-01",
+          "value": 124.0
+        },
+        {
+          "period": "2018-08-01",
+          "value": 129.0
+        },
+        {
+          "period": "2018-09-01",
+          "value": 81.0
+        },
+        {
+          "period": "2018-10-01",
+          "value": 145.0
+        },
+        {
+          "period": "2018-11-01",
+          "value": 118.0
+        },
+        {
+          "period": "2018-12-01",
+          "value": 124.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 116.0
+        },
+        {
+          "period": "2019-02-01",
+          "value": 103.0
+        },
+        {
+          "period": "2019-03-01",
+          "value": 118.0
+        },
+        {
+          "period": "2019-04-01",
+          "value": 119.0
+        },
+        {
+          "period": "2019-05-01",
+          "value": 91.0
+        },
+        {
+          "period": "2019-06-01",
+          "value": 122.0
+        },
+        {
+          "period": "2019-07-01",
+          "value": 98.0
+        },
+        {
+          "period": "2019-08-01",
+          "value": 87.0
+        },
+        {
+          "period": "2019-09-01",
+          "value": 86.0
+        },
+        {
+          "period": "2019-10-01",
+          "value": 127.0
+        },
+        {
+          "period": "2019-11-01",
+          "value": 187.0
+        },
+        {
+          "period": "2019-12-01",
+          "value": 168.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 152.0
+        },
+        {
+          "period": "2020-02-01",
+          "value": 72.0
+        },
+        {
+          "period": "2020-03-01",
+          "value": 93.0
+        },
+        {
+          "period": "2020-04-01",
+          "value": 127.0
+        },
+        {
+          "period": "2020-05-01",
+          "value": 105.0
+        },
+        {
+          "period": "2020-06-01",
+          "value": 115.0
+        },
+        {
+          "period": "2020-07-01",
+          "value": 103.0
+        },
+        {
+          "period": "2020-08-01",
+          "value": 82.0
+        },
+        {
+          "period": "2020-09-01",
+          "value": 115.0
+        },
+        {
+          "period": "2020-10-01",
+          "value": 116.0
+        },
+        {
+          "period": "2020-11-01",
+          "value": 103.0
+        },
+        {
+          "period": "2020-12-01",
+          "value": 101.0
+        },
+        {
+          "period": "2021-01-01",
+          "value": 96.0
+        },
+        {
+          "period": "2021-02-01",
+          "value": 65.0
+        },
+        {
+          "period": "2021-03-01",
+          "value": 75.0
+        },
+        {
+          "period": "2021-04-01",
+          "value": 135.0
+        },
+        {
+          "period": "2021-05-01",
+          "value": 94.0
+        },
+        {
+          "period": "2021-06-01",
+          "value": 124.0
+        },
+        {
+          "period": "2021-07-01",
+          "value": 169.0
+        },
+        {
+          "period": "2021-08-01",
+          "value": 117.0
+        }
+      ],
+      "development_end": "2021-02-01",
+      "test_start": "2021-03-01",
+      "test_end": "2021-08-01",
+      "test": [
+        {
+          "period": "2021-03-01",
+          "actual": 75.0,
+          "predicted": 96.10950564675771,
+          "lower": 69.70201661432564,
+          "upper": 122.51699467918978
+        },
+        {
+          "period": "2021-04-01",
+          "actual": 135.0,
+          "predicted": 98.47622986372929,
+          "lower": 72.06874083129722,
+          "upper": 124.88371889616135
+        },
+        {
+          "period": "2021-05-01",
+          "actual": 94.0,
+          "predicted": 95.75988035739589,
+          "lower": 69.35239132496382,
+          "upper": 122.16736938982795
+        },
+        {
+          "period": "2021-06-01",
+          "actual": 124.0,
+          "predicted": 99.74820000822933,
+          "lower": 73.34071097579726,
+          "upper": 126.1556890406614
+        },
+        {
+          "period": "2021-07-01",
+          "actual": 169.0,
+          "predicted": 100.30101897359428,
+          "lower": 73.89352994116221,
+          "upper": 126.70850800602635
+        },
+        {
+          "period": "2021-08-01",
+          "actual": 117.0,
+          "predicted": 98.28686730499896,
+          "lower": 71.8793782725669,
+          "upper": 124.69435633743103
+        }
+      ],
+      "test_metrics": {
+        "mae": 28.509511642266954,
+        "rmse": 35.214995207198314,
+        "smape": 24.649634108395485,
+        "wape": 0.23957572808627692,
+        "mase": 0.8851225447273666
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 29.25,
+          "cv_rmse": 33.79908878562896,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 12.5,
+              "rmse": 16.62828914831589,
+              "smape": 11.09441066866745,
+              "wape": 0.11210762331838565,
+              "mase": 0.37128712871287134
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 35.166666666666664,
+              "rmse": 39.71355771857599,
+              "smape": 27.956298166523236,
+              "wape": 0.28021248339973437,
+              "mase": 1.0490056818181817
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 57.333333333333336,
+              "rmse": 62.65780079128216,
+              "smape": 43.14625851330772,
+              "wape": 0.5180722891566265,
+              "mase": 1.7071960297766748
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 12.0,
+              "rmse": 16.19670748434179,
+              "smape": 11.558275087280506,
+              "wape": 0.11612903225806452,
+              "mase": 0.3739180611656087
+            }
+          ],
+          "test_metrics": {
+            "mae": 54.0,
+            "rmse": 61.7008914036094,
+            "smape": 54.871551695451075,
+            "wape": 0.453781512605042,
+            "mase": 1.6765147721582372
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 28.777777777777775,
+          "cv_rmse": 33.9023980048396,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 17.5,
+              "rmse": 20.65187642806338,
+              "smape": 15.02009675166921,
+              "wape": 0.15695067264573992,
+              "mase": 0.5198019801980198
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 35.166666666666664,
+              "rmse": 42.24860286973339,
+              "smape": 27.89203629780945,
+              "wape": 0.28021248339973437,
+              "mase": 1.0490056818181817
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 49.99999999999999,
+              "rmse": 56.0257877132387,
+              "smape": 38.92633390956326,
+              "wape": 0.45180722891566255,
+              "mase": 1.4888337468982626
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 12.444444444444448,
+              "rmse": 16.683325008322935,
+              "smape": 11.939846442730493,
+              "wape": 0.12043010752688176,
+              "mase": 0.38776687824581657
+            }
+          ],
+          "test_metrics": {
+            "mae": 35.77777777777778,
+            "rmse": 43.51755712098024,
+            "smape": 32.14725422472412,
+            "wape": 0.30065359477124187,
+            "mase": 1.110777277026651
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 34.95607813072738,
+          "cv_rmse": 38.589214600969115,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 21.659574468085108,
+              "rmse": 24.72940931209853,
+              "smape": 18.09605974585759,
+              "wape": 0.19425627325636866,
+              "mase": 0.6433536970718349
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 33.11949685534591,
+              "rmse": 36.56988316326129,
+              "smape": 26.41827449896324,
+              "wape": 0.2639003733493698,
+              "mase": 0.9879395368782159
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 67.24011299435028,
+              "rmse": 72.1666158574501,
+              "smape": 48.491526963265244,
+              "wape": 0.6075913824790689,
+              "mase": 2.0021869874248224
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 17.80512820512821,
+              "rmse": 20.890950071066538,
+              "smape": 16.40492158215776,
+              "wape": 0.17230769230769233,
+              "mase": 0.5548049181055529
+            }
+          ],
+          "test_metrics": {
+            "mae": 50.93150684931506,
+            "rmse": 58.62838569056847,
+            "smape": 50.730799024639765,
+            "wape": 0.42799585587659716,
+            "mase": 1.5812485852065767
+          }
+        },
+        {
+          "model": "seasonal_naive",
+          "cv_mae": 30.083333333333332,
+          "cv_rmse": 36.7006368721475,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 32.666666666666664,
+              "rmse": 38.23174945861969,
+              "smape": 35.77472835581748,
+              "wape": 0.2929745889387145,
+              "mase": 0.9702970297029703
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 34.0,
+              "rmse": 39.761790704142086,
+              "smape": 26.153086387128216,
+              "wape": 0.27091633466135456,
+              "mase": 1.0142045454545454
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 20.166666666666668,
+              "rmse": 23.061511948121126,
+              "smape": 18.781312976160454,
+              "wape": 0.1822289156626506,
+              "mase": 0.6004962779156328
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 33.5,
+              "rmse": 45.74749537770711,
+              "smape": 26.09111072560923,
+              "wape": 0.3241935483870968,
+              "mase": 1.0438545874206577
+            }
+          ],
+          "test_metrics": {
+            "mae": 24.5,
+            "rmse": 32.07023542164915,
+            "smape": 21.63789832571958,
+            "wape": 0.20588235294117646,
+            "mase": 0.7606409614421632
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 34.5885386983207,
+          "cv_rmse": 38.64593525950297,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 22.555173171481993,
+              "rmse": 24.587825636123643,
+              "smape": 18.756971869083273,
+              "wape": 0.20228854862315687,
+              "mase": 0.6699556387568909
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 33.76818376531789,
+              "rmse": 36.18830113396271,
+              "smape": 27.15364428063057,
+              "wape": 0.2690691933491466,
+              "mase": 1.007289572544994
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 43.183265289865155,
+              "rmse": 51.11825161872953,
+              "smape": 34.55783766505295,
+              "wape": 0.3902102285228779,
+              "mase": 1.2858540532962328
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 38.84753256661776,
+              "rmse": 42.689362649196006,
+              "smape": 31.45228132132529,
+              "wape": 0.3759438635479138,
+              "mase": 1.2104828381981296
+            }
+          ],
+          "test_metrics": {
+            "mae": 50.44620079269915,
+            "rmse": 59.65720604235759,
+            "smape": 50.198932515185305,
+            "wape": 0.42391765372016094,
+            "mase": 1.566181496818902
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 29.89179503479034,
+          "cv_rmse": 34.0188112236869,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 19.271537856337677,
+              "rmse": 21.680974107246104,
+              "smape": 16.281835917792474,
+              "wape": 0.1728389045411451,
+              "mase": 0.5724219165248815
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 32.512875769709645,
+              "rmse": 34.29451815668663,
+              "smape": 26.064342362987066,
+              "wape": 0.2590667392008737,
+              "mase": 0.9698443056305434
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 35.485207143885724,
+              "rmse": 43.87085831500826,
+              "smape": 29.708025964972464,
+              "wape": 0.32064946214354567,
+              "mase": 1.0566314782298478
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 32.29755936922832,
+              "rmse": 36.22889431580661,
+              "smape": 26.917773812265334,
+              "wape": 0.31255702615382247,
+              "mase": 1.0063867316435828
+            }
+          ],
+          "test_metrics": {
+            "mae": 33.542415052966554,
+            "rmse": 40.60763540359988,
+            "smape": 29.791993420111265,
+            "wape": 0.28186903405854247,
+            "mase": 1.0413769320400232
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 20.301516455571903,
+          "cv_rmse": 24.911817318657874,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 9.008603098277206,
+              "rmse": 10.781823879936196,
+              "smape": 8.316048489392463,
+              "wape": 0.08079464662132023,
+              "mase": 0.2675822702458576
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 32.5495401219552,
+              "rmse": 39.50183018580332,
+              "smape": 25.66172451017535,
+              "wape": 0.25935888543390595,
+              "mase": 0.9709379865924135
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 23.695377977150553,
+              "rmse": 30.530874743600545,
+              "smape": 21.359458924971833,
+              "wape": 0.21411486123931223,
+              "mase": 0.7055695675578328
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 15.952544624904656,
+              "rmse": 18.832740465291437,
+              "smape": 14.771697929159883,
+              "wape": 0.15437946411198056,
+              "mase": 0.49707871306685014
+            }
+          ],
+          "test_metrics": {
+            "mae": 28.509511642266954,
+            "rmse": 35.214995207198314,
+            "smape": 24.649634108395485,
+            "wape": 0.23957572808627692,
+            "mase": 0.8851225447273666
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 24.764439894385234,
+          "cv_rmse": 29.10976337371803,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 8.381199919765848,
+              "rmse": 10.023629013941486,
+              "smape": 7.593734133003378,
+              "wape": 0.0751677122848955,
+              "mase": 0.24894653227027272
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 34.978036691317946,
+              "rmse": 39.844823508500845,
+              "smape": 27.798574637385716,
+              "wape": 0.2787094557077127,
+              "mase": 1.0433789353944274
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 39.23111950907421,
+              "rmse": 46.22402701941633,
+              "smape": 32.2828586125681,
+              "wape": 0.3544980678530802,
+              "mase": 1.16817229307417
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 16.467403457382932,
+              "rmse": 20.346573953013465,
+              "smape": 15.084365040734783,
+              "wape": 0.15936196894241547,
+              "mase": 0.5131216311013723
+            }
+          ],
+          "test_metrics": {
+            "mae": 27.063124682491054,
+            "rmse": 31.94983915316677,
+            "smape": 23.398566090940392,
+            "wape": 0.22742121581925256,
+            "mase": 0.8402171909436381
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 24.70609010491823,
+          "cv_rmse": 29.10798008527404,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 8.33159115961201,
+              "rmse": 9.992396182381054,
+              "smape": 7.528878726109878,
+              "wape": 0.07472279066916601,
+              "mase": 0.24747300474095082
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 35.22874368686869,
+              "rmse": 40.41590778346209,
+              "smape": 27.99646286586208,
+              "wape": 0.2807071210109059,
+              "mase": 1.0508574111139808
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 38.27690476190474,
+              "rmse": 45.1591925270999,
+              "smape": 31.667115808347162,
+              "wape": 0.3458756454388982,
+              "mase": 1.1397589507266919
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 16.98712081128748,
+              "rmse": 20.86442384815312,
+              "smape": 15.457467742903352,
+              "wape": 0.1643914917221369,
+              "mase": 0.5293159398785481
+            }
+          ],
+          "test_metrics": {
+            "mae": 29.791865079365092,
+            "rmse": 34.58489233239704,
+            "smape": 26.060688903758294,
+            "wape": 0.2503518073896226,
+            "mase": 0.9249352202907539
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-09-01",
+          "predicted": 120.08203325954943,
+          "lower": 93.67454422711737,
+          "upper": 146.4895222919815
+        },
+        {
+          "period": "2021-10-01",
+          "predicted": 126.02025420564934,
+          "lower": 99.61276517321727,
+          "upper": 152.4277432380814
+        },
+        {
+          "period": "2021-11-01",
+          "predicted": 117.47749522133711,
+          "lower": 91.07000618890504,
+          "upper": 143.88498425376918
+        },
+        {
+          "period": "2021-12-01",
+          "predicted": 118.96605008032203,
+          "lower": 92.55856104788997,
+          "upper": 145.3735391127541
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 121.27563073450085,
+          "lower": 94.86814170206878,
+          "upper": 147.68311976693292
+        },
+        {
+          "period": "2022-02-01",
+          "predicted": 112.85503513396463,
+          "lower": 86.44754610153257,
+          "upper": 139.2625241663967
+        }
+      ],
+      "forecast_origin": "2021-08-01",
+      "band_width": 26.407489032432068,
+      "band_quantile": 0.8,
+      "band_residual_count": 24,
+      "test_band_coverage": 0.6666666666666666,
+      "selected_at": "2026-11-06T12:22:29.685961+00:00",
+      "evaluated_at": "2026-11-06T12:22:30.557232+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    },
+    {
+      "target": "additions",
+      "group": "tv",
+      "frequency": "MS",
+      "model": "forest_shallow",
+      "history": [
+        {
+          "period": "2015-01-01",
+          "value": 0.0
+        },
+        {
+          "period": "2015-02-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-03-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-04-01",
+          "value": 4.0
+        },
+        {
+          "period": "2015-05-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-06-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-07-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-08-01",
+          "value": 0.0
+        },
+        {
+          "period": "2015-09-01",
+          "value": 1.0
+        },
+        {
+          "period": "2015-10-01",
+          "value": 4.0
+        },
+        {
+          "period": "2015-11-01",
+          "value": 2.0
+        },
+        {
+          "period": "2015-12-01",
+          "value": 7.0
+        },
+        {
+          "period": "2016-01-01",
+          "value": 28.0
+        },
+        {
+          "period": "2016-02-01",
+          "value": 6.0
+        },
+        {
+          "period": "2016-03-01",
+          "value": 3.0
+        },
+        {
+          "period": "2016-04-01",
+          "value": 8.0
+        },
+        {
+          "period": "2016-05-01",
+          "value": 4.0
+        },
+        {
+          "period": "2016-06-01",
+          "value": 7.0
+        },
+        {
+          "period": "2016-07-01",
+          "value": 9.0
+        },
+        {
+          "period": "2016-08-01",
+          "value": 11.0
+        },
+        {
+          "period": "2016-09-01",
+          "value": 19.0
+        },
+        {
+          "period": "2016-10-01",
+          "value": 19.0
+        },
+        {
+          "period": "2016-11-01",
+          "value": 18.0
+        },
+        {
+          "period": "2016-12-01",
+          "value": 43.0
+        },
+        {
+          "period": "2017-01-01",
+          "value": 14.0
+        },
+        {
+          "period": "2017-02-01",
+          "value": 17.0
+        },
+        {
+          "period": "2017-03-01",
+          "value": 38.0
+        },
+        {
+          "period": "2017-04-01",
+          "value": 27.0
+        },
+        {
+          "period": "2017-05-01",
+          "value": 23.0
+        },
+        {
+          "period": "2017-06-01",
+          "value": 29.0
+        },
+        {
+          "period": "2017-07-01",
+          "value": 34.0
+        },
+        {
+          "period": "2017-08-01",
+          "value": 38.0
+        },
+        {
+          "period": "2017-09-01",
+          "value": 32.0
+        },
+        {
+          "period": "2017-10-01",
+          "value": 29.0
+        },
+        {
+          "period": "2017-11-01",
+          "value": 30.0
+        },
+        {
+          "period": "2017-12-01",
+          "value": 38.0
+        },
+        {
+          "period": "2018-01-01",
+          "value": 24.0
+        },
+        {
+          "period": "2018-02-01",
+          "value": 23.0
+        },
+        {
+          "period": "2018-03-01",
+          "value": 35.0
+        },
+        {
+          "period": "2018-04-01",
+          "value": 28.0
+        },
+        {
+          "period": "2018-05-01",
+          "value": 27.0
+        },
+        {
+          "period": "2018-06-01",
+          "value": 28.0
+        },
+        {
+          "period": "2018-07-01",
+          "value": 27.0
+        },
+        {
+          "period": "2018-08-01",
+          "value": 34.0
+        },
+        {
+          "period": "2018-09-01",
+          "value": 43.0
+        },
+        {
+          "period": "2018-10-01",
+          "value": 45.0
+        },
+        {
+          "period": "2018-11-01",
+          "value": 36.0
+        },
+        {
+          "period": "2018-12-01",
+          "value": 61.0
+        },
+        {
+          "period": "2019-01-01",
+          "value": 36.0
+        },
+        {
+          "period": "2019-02-01",
+          "value": 45.0
+        },
+        {
+          "period": "2019-03-01",
+          "value": 52.0
+        },
+        {
+          "period": "2019-04-01",
+          "value": 43.0
+        },
+        {
+          "period": "2019-05-01",
+          "value": 48.0
+        },
+        {
+          "period": "2019-06-01",
+          "value": 46.0
+        },
+        {
+          "period": "2019-07-01",
+          "value": 59.0
+        },
+        {
+          "period": "2019-08-01",
+          "value": 44.0
+        },
+        {
+          "period": "2019-09-01",
+          "value": 37.0
+        },
+        {
+          "period": "2019-10-01",
+          "value": 65.0
+        },
+        {
+          "period": "2019-11-01",
+          "value": 68.0
+        },
+        {
+          "period": "2019-12-01",
+          "value": 47.0
+        },
+        {
+          "period": "2020-01-01",
+          "value": 53.0
+        },
+        {
+          "period": "2020-02-01",
+          "value": 42.0
+        },
+        {
+          "period": "2020-03-01",
+          "value": 44.0
+        },
+        {
+          "period": "2020-04-01",
+          "value": 50.0
+        },
+        {
+          "period": "2020-05-01",
+          "value": 52.0
+        },
+        {
+          "period": "2020-06-01",
+          "value": 41.0
+        },
+        {
+          "period": "2020-07-01",
+          "value": 43.0
+        },
+        {
+          "period": "2020-08-01",
+          "value": 47.0
+        },
+        {
+          "period": "2020-09-01",
+          "value": 53.0
+        },
+        {
+          "period": "2020-10-01",
+          "value": 51.0
+        },
+        {
+          "period": "2020-11-01",
+          "value": 51.0
+        },
+        {
+          "period": "2020-12-01",
+          "value": 68.0
+        },
+        {
+          "period": "2021-01-01",
+          "value": 36.0
+        },
+        {
+          "period": "2021-02-01",
+          "value": 44.0
+        },
+        {
+          "period": "2021-03-01",
+          "value": 37.0
+        },
+        {
+          "period": "2021-04-01",
+          "value": 53.0
+        },
+        {
+          "period": "2021-05-01",
+          "value": 38.0
+        },
+        {
+          "period": "2021-06-01",
+          "value": 83.0
+        },
+        {
+          "period": "2021-07-01",
+          "value": 88.0
+        },
+        {
+          "period": "2021-08-01",
+          "value": 61.0
+        }
+      ],
+      "development_end": "2021-02-01",
+      "test_start": "2021-03-01",
+      "test_end": "2021-08-01",
+      "test": [
+        {
+          "period": "2021-03-01",
+          "actual": 37.0,
+          "predicted": 49.97281267211339,
+          "lower": 37.27730671973246,
+          "upper": 62.668318624494326
+        },
+        {
+          "period": "2021-04-01",
+          "actual": 53.0,
+          "predicted": 47.92885738896262,
+          "lower": 35.233351436581685,
+          "upper": 60.62436334134355
+        },
+        {
+          "period": "2021-05-01",
+          "actual": 38.0,
+          "predicted": 47.17800610928685,
+          "lower": 34.482500156905914,
+          "upper": 59.87351206166778
+        },
+        {
+          "period": "2021-06-01",
+          "actual": 83.0,
+          "predicted": 47.570103245753174,
+          "lower": 34.87459729337224,
+          "upper": 60.26560919813411
+        },
+        {
+          "period": "2021-07-01",
+          "actual": 88.0,
+          "predicted": 47.8436177765655,
+          "lower": 35.14811182418457,
+          "upper": 60.539123728946436
+        },
+        {
+          "period": "2021-08-01",
+          "actual": 61.0,
+          "predicted": 47.84464050383824,
+          "lower": 35.14913455145731,
+          "upper": 60.540146456219176
+        }
+      ],
+      "test_metrics": {
+        "mae": 19.327266644380117,
+        "rmse": 23.519928617074715,
+        "smape": 33.165792685580435,
+        "wape": 0.3221211107396686,
+        "mase": 1.457774369770763
+      },
+      "comparison": [
+        {
+          "model": "last_value",
+          "cv_mae": 10.708333333333334,
+          "cv_rmse": 12.180890481420207,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 16.0,
+              "rmse": 16.73320053068151,
+              "smape": 30.695042223302057,
+              "wape": 0.35555555555555557,
+              "mase": 1.2715231788079469
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 11.0,
+              "rmse": 13.5400640077266,
+              "smape": 20.979059881835674,
+              "wape": 0.20625,
+              "mase": 0.8279569892473118
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 4.666666666666667,
+              "rmse": 4.83045891539648,
+              "smape": 9.958717066211564,
+              "wape": 0.09929078014184398,
+              "mase": 0.33333333333333337
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 11.166666666666666,
+              "rmse": 13.619838471876236,
+              "smape": 22.824954760853398,
+              "wape": 0.21405750798722045,
+              "mase": 0.8421787709497206
+            }
+          ],
+          "test_metrics": {
+            "mae": 20.333333333333332,
+            "rmse": 25.534290669607408,
+            "smape": 35.15662331198998,
+            "wape": 0.3388888888888889,
+            "mase": 1.5336577453365774
+          }
+        },
+        {
+          "model": "mean_3",
+          "cv_mae": 8.625,
+          "cv_rmse": 10.505312007845498,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 4.111111111111112,
+              "rmse": 5.426273532033235,
+              "smape": 9.24999416260247,
+              "wape": 0.09135802469135804,
+              "mase": 0.32671081677704195
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 11.111111111111114,
+              "rmse": 13.723459233492603,
+              "smape": 21.21276093699468,
+              "wape": 0.2083333333333334,
+              "mase": 0.836320191158901
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 13.0,
+              "rmse": 13.868429375143148,
+              "smape": 24.75733729850553,
+              "wape": 0.2765957446808511,
+              "mase": 0.9285714285714286
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 6.277777777777779,
+              "rmse": 9.003085890713004,
+              "smape": 11.828434965964354,
+              "wape": 0.12034078807241748,
+              "mase": 0.47346368715083803
+            }
+          ],
+          "test_metrics": {
+            "mae": 18.555555555555554,
+            "rmse": 22.578258962501465,
+            "smape": 31.672013129886608,
+            "wape": 0.30925925925925923,
+            "mase": 1.399567450662341
+          }
+        },
+        {
+          "model": "drift",
+          "cv_mae": 11.293607556521167,
+          "cv_rmse": 12.58080122391844,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 20.542553191489365,
+              "rmse": 20.9784159055622,
+              "smape": 37.62458134678519,
+              "wape": 0.456501182033097,
+              "mase": 1.6325207834296183
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 10.811320754716983,
+              "rmse": 12.017431269842266,
+              "smape": 20.620081280730652,
+              "wape": 0.20271226415094343,
+              "mase": 0.8137553256238589
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 4.861581920903955,
+              "rmse": 6.012017554064697,
+              "smape": 10.334522420843918,
+              "wape": 0.10343791321072245,
+              "mase": 0.34725585149313964
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 8.95897435897436,
+              "rmse": 11.315340166204598,
+              "smape": 17.718625717973925,
+              "wape": 0.1717375276480708,
+              "mase": 0.6756768371293511
+            }
+          ],
+          "test_metrics": {
+            "mae": 19.027397260273972,
+            "rmse": 23.725088827439496,
+            "smape": 32.50767215111454,
+            "wape": 0.3171232876712329,
+            "mase": 1.4351564843515647
+          }
+        },
+        {
+          "model": "seasonal_naive",
+          "cv_mae": 14.583333333333334,
+          "cv_rmse": 15.89051982306298,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 17.5,
+              "rmse": 17.82788078637877,
+              "smape": 48.44808531641089,
+              "wape": 0.3888888888888889,
+              "mase": 1.390728476821192
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 19.0,
+              "rmse": 21.525179054617254,
+              "smape": 39.814609020035384,
+              "wape": 0.35625,
+              "mase": 1.4301075268817203
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 7.333333333333333,
+              "rmse": 8.679477710861024,
+              "smape": 16.052246982706542,
+              "wape": 0.15602836879432624,
+              "mase": 0.5238095238095238
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 14.5,
+              "rmse": 15.529541740394874,
+              "smape": 27.12543498415268,
+              "wape": 0.2779552715654952,
+              "mase": 1.0935754189944134
+            }
+          ],
+          "test_metrics": {
+            "mae": 20.833333333333332,
+            "rmse": 26.580067720004024,
+            "smape": 36.098409322162404,
+            "wape": 0.3472222222222222,
+            "mase": 1.5713706407137062
+          }
+        },
+        {
+          "model": "ridge_1",
+          "cv_mae": 8.448065996989838,
+          "cv_rmse": 9.518070922183549,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 5.793774872793819,
+              "rmse": 7.334098024674946,
+              "smape": 13.032886892032503,
+              "wape": 0.12875055272875155,
+              "mase": 0.46043244022202534
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 10.654387662975946,
+              "rmse": 10.971477926124397,
+              "smape": 20.442157136559477,
+              "wape": 0.199769768680799,
+              "mase": 0.8019431574282969
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 9.528982591792545,
+              "rmse": 11.488698488099288,
+              "smape": 18.613686275098818,
+              "wape": 0.20274431046367117,
+              "mase": 0.6806416136994675
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 7.815118860397042,
+              "rmse": 8.278009249835563,
+              "smape": 14.490009537966033,
+              "wape": 0.14981058518332988,
+              "mase": 0.5894084056724026
+            }
+          ],
+          "test_metrics": {
+            "mae": 17.75664302082024,
+            "rmse": 20.978964572693293,
+            "smape": 30.186112229474713,
+            "wape": 0.29594405034700394,
+            "mase": 1.3393088409864413
+          }
+        },
+        {
+          "model": "ridge_10",
+          "cv_mae": 8.041766628852338,
+          "cv_rmse": 8.864241397537878,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 6.395162628291335,
+              "rmse": 6.840268834544064,
+              "smape": 14.825716957350295,
+              "wape": 0.1421147250731408,
+              "mase": 0.508224844632424
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 11.4184013693218,
+              "rmse": 12.014244096389744,
+              "smape": 21.876505145527602,
+              "wape": 0.21409502567478372,
+              "mase": 0.8594495654328236
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 7.777688942003473,
+              "rmse": 9.283641106178527,
+              "smape": 15.634152134137716,
+              "wape": 0.1654827434468824,
+              "mase": 0.5555492101431052
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 6.575813575792746,
+              "rmse": 7.318811553039179,
+              "smape": 12.187184949153211,
+              "wape": 0.12605393436024434,
+              "mase": 0.4959412473363244
+            }
+          ],
+          "test_metrics": {
+            "mae": 18.8532718046808,
+            "rmse": 22.52997393153897,
+            "smape": 32.32973240514259,
+            "wape": 0.31422119674468,
+            "mase": 1.4220229341730044
+          }
+        },
+        {
+          "model": "ridge_100",
+          "cv_mae": 7.728949630014328,
+          "cv_rmse": 9.698380528376765,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 9.075063471816886,
+              "rmse": 9.792755696708756,
+              "smape": 21.811251308540836,
+              "wape": 0.20166807715148635,
+              "mase": 0.7211970970980307
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 12.412218285250665,
+              "rmse": 15.600872479785489,
+              "smape": 24.10833106336364,
+              "wape": 0.23272909284844995,
+              "mase": 0.9342529892124156
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 3.9373129753398586,
+              "rmse": 4.621879442935347,
+              "smape": 8.463742498791403,
+              "wape": 0.08377261649659273,
+              "mase": 0.2812366410957042
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 5.491203787649906,
+              "rmse": 8.778014494077466,
+              "smape": 10.23780158594233,
+              "wape": 0.10526269241501418,
+              "mase": 0.4141410677836521
+            }
+          ],
+          "test_metrics": {
+            "mae": 19.850794956957277,
+            "rmse": 24.264402316483736,
+            "smape": 34.25049889210903,
+            "wape": 0.3308465826159546,
+            "mase": 1.4972619067291377
+          }
+        },
+        {
+          "model": "forest_shallow",
+          "cv_mae": 7.182526748944048,
+          "cv_rmse": 8.699647283325888,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 6.2636782640244535,
+              "rmse": 6.692028805279997,
+              "smape": 14.48368616650341,
+              "wape": 0.13919285031165454,
+              "mase": 0.4977757560814135
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 11.568039572310402,
+              "rmse": 12.350568213885117,
+              "smape": 22.15184364314922,
+              "wape": 0.21690074198082004,
+              "mase": 0.8707126559803529
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 5.2224999600979976,
+              "rmse": 7.252216440495291,
+              "smape": 10.998563440996952,
+              "wape": 0.11111702042761697,
+              "mase": 0.37303571143557124
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 5.675889199343339,
+              "rmse": 8.503775673643151,
+              "smape": 10.605884043394518,
+              "wape": 0.10880298784683717,
+              "mase": 0.42806985581639706
+            }
+          ],
+          "test_metrics": {
+            "mae": 19.327266644380117,
+            "rmse": 23.519928617074715,
+            "smape": 33.165792685580435,
+            "wape": 0.3221211107396686,
+            "mase": 1.457774369770763
+          }
+        },
+        {
+          "model": "forest_full",
+          "cv_mae": 7.355369130291007,
+          "cv_rmse": 8.847286757306803,
+          "folds": [
+            {
+              "origin": "2018-12-01",
+              "fit_end": "2018-12-01",
+              "validation_start": "2019-01-01",
+              "validation_end": "2019-06-01",
+              "mae": 6.101922949735446,
+              "rmse": 6.561566353691875,
+              "smape": 14.084985406321229,
+              "wape": 0.1355982877718988,
+              "mase": 0.4849210291180487
+            },
+            {
+              "origin": "2019-06-01",
+              "fit_end": "2019-06-01",
+              "validation_start": "2019-07-01",
+              "validation_end": "2019-12-01",
+              "mae": 11.4828835978836,
+              "rmse": 12.183865637688932,
+              "smape": 21.951745587609185,
+              "wape": 0.2153040674603175,
+              "mase": 0.8643030665073677
+            },
+            {
+              "origin": "2019-12-01",
+              "fit_end": "2019-12-01",
+              "validation_start": "2020-01-01",
+              "validation_end": "2020-06-01",
+              "mae": 5.682996031746035,
+              "rmse": 7.678006333958286,
+              "smape": 11.872498001562192,
+              "wape": 0.12091480918608585,
+              "mase": 0.40592828798185965
+            },
+            {
+              "origin": "2020-06-01",
+              "fit_end": "2020-06-01",
+              "validation_start": "2020-07-01",
+              "validation_end": "2020-12-01",
+              "mae": 6.153673941798946,
+              "rmse": 8.965708703888119,
+              "smape": 11.578455003844468,
+              "wape": 0.11796180080125775,
+              "mase": 0.46410390063846796
+            }
+          ],
+          "test_metrics": {
+            "mae": 19.270141093474425,
+            "rmse": 23.74302555821997,
+            "smape": 33.032977727835565,
+            "wape": 0.3211690182245738,
+            "mase": 1.4534656299214288
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "period": "2021-09-01",
+          "predicted": 67.95124858292593,
+          "lower": 55.255742630544994,
+          "upper": 80.64675453530685
+        },
+        {
+          "period": "2021-10-01",
+          "predicted": 68.45893576964271,
+          "lower": 55.76342981726177,
+          "upper": 81.15444172202365
+        },
+        {
+          "period": "2021-11-01",
+          "predicted": 69.82573699144722,
+          "lower": 57.13023103906628,
+          "upper": 82.52124294382816
+        },
+        {
+          "period": "2021-12-01",
+          "predicted": 70.06793770130939,
+          "lower": 57.372431748928456,
+          "upper": 82.76344365369033
+        },
+        {
+          "period": "2022-01-01",
+          "predicted": 67.57677200834225,
+          "lower": 54.88126605596131,
+          "upper": 80.27227796072319
+        },
+        {
+          "period": "2022-02-01",
+          "predicted": 65.81497732068426,
+          "lower": 53.11947136830333,
+          "upper": 78.5104832730652
+        }
+      ],
+      "forecast_origin": "2021-08-01",
+      "band_width": 12.695505952380934,
+      "band_quantile": 0.8,
+      "band_residual_count": 24,
+      "test_band_coverage": 0.3333333333333333,
+      "selected_at": "2026-11-06T12:22:34.117935+00:00",
+      "evaluated_at": "2026-11-06T12:22:35.115740+00:00",
+      "refit_policy": "Final test uses development-only fit. Published projection refits selected model on all completed periods, including test, after evaluation; stored test scores are unchanged."
+    }
+  ]
+}
