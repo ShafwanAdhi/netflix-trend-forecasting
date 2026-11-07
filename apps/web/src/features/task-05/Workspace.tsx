@@ -1,4 +1,5 @@
 import { useSearchParams, Link } from "react-router";
+import { DATA_COLORS } from "../../lib/dataColors";
 import {
   Area,
   CartesianGrid,
@@ -153,15 +154,15 @@ function Chart({ row, test = false }: { row: ForecastSeries; test?: boolean }) {
               dataKey="band"
               name="Empirical CV error band"
               stroke="none"
-              fill="#000000"
-              fillOpacity={0.1}
+              fill={DATA_COLORS.band}
+              fillOpacity={0.65}
               isAnimationActive={false}
             />
           )}
           <Line
             dataKey="observed"
             name="Observed snapshot cohort"
-            stroke="#000000"
+            stroke={DATA_COLORS.observed}
             strokeWidth={2}
             dot={false}
             isAnimationActive={false}
@@ -174,8 +175,8 @@ function Chart({ row, test = false }: { row: ForecastSeries; test?: boolean }) {
                   ? "Selected model, development fit"
                   : "Selected model, full-history refit"
               }
-              stroke="#000000"
-              strokeWidth={2}
+              stroke={DATA_COLORS.projected}
+              strokeWidth={2.5}
               strokeDasharray="5 3"
               dot={{ r: 3 }}
               isAnimationActive={false}
