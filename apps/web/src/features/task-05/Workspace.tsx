@@ -118,6 +118,7 @@ function Chart({ row, test = false }: { row: ForecastSeries; test?: boolean }) {
   return (
     <div
       className="forecast-chart"
+      data-motion-revision={`${row.target}-${row.group}-${row.forecast.length}-${test}`}
       role="img"
       aria-label={
         test

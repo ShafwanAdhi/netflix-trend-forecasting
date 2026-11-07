@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "task_id": 5,
+  "run_id": "20261106T122211417836Z",
+  "checks": [
+    "overview: masked directional heading entrance",
+    "overview: motion preserves desktop width",
+    "dataset: masked directional heading entrance",
+    "dataset: motion preserves desktop width",
+    "Dataset evidence reveals on scroll",
+    "forecast: masked directional heading entrance",
+    "forecast: motion preserves desktop width",
+    "evaluation: masked directional heading entrance",
+    "evaluation: motion preserves desktop width",
+    "methodology: masked directional heading entrance",
+    "methodology: motion preserves desktop width",
+    "Navigation click receives press feedback",
+    "Backward navigation reverses heading direction",
+    "Chart series has a dedicated evidence reveal",
+    "Forecast target animates refreshed evidence",
+    "Pointer hover supplies elevation without shadows",
+    "Animated control remains keyboard focusable",
+    "Keyboard activation receives click feedback",
+    "Runtime reduced-motion change cancels active motion",
+    "Reduced-motion page and scroll make no animation calls",
+    "768px: animation causes no global overflow",
+    "390px: animation causes no global overflow",
+    "320px: animation causes no global overflow",
+    "No browser exceptions during motion and interactions"
+  ],
+  "errors": []
+}
