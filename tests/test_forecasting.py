@@ -74,7 +74,14 @@ def test_recursive_forecast_saved_parity_and_test_reproduction(service):
         score = metrics(
             actual, predicted.values, development.values, 12 if row["target"] == "additions" else 1
         )
-        assert score == row["test_metrics"]
+        # BLAS/CPU implementations can differ in the last floating-point digits.
+        # Preserve every metric and missing value while tolerating rounding only.
+        assert score.keys() == row["test_metrics"].keys()
+        for name, expected_metric in row["test_metrics"].items():
+            if expected_metric is None:
+                assert score[name] is None
+            else:
+                assert score[name] == pytest.approx(expected_metric, rel=1e-12, abs=1e-12)
         # Altering future observations cannot enter a model already fitted on development.
         altered = history.copy()
         altered.loc[row["test_start"] :] = 1000000
