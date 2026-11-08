@@ -1,4 +1,4 @@
-"""Execute project-owned analysis cells against frozen Task 5 results."""
+"""Execute project-owned analysis cells against frozen model results."""
 
 import contextlib
 import io
@@ -30,9 +30,9 @@ for row in result['series']:
 """,
 ]
 cells = [
-    nbformat.v4.new_markdown_cell("""# Task 5 — Historical trend forecasting
+    nbformat.v4.new_markdown_cell("""# Historical trend forecasting
 
-This executed notebook reads frozen experimental outputs. Annual release-year cohorts are the assignment focus; monthly date-added cohorts are a distinct supplementary target. Neither is a complete Netflix release pipeline. Projections are relative to completed historical periods, not the current calendar date. The snapshot ends September 25, 2021; 2021 release cohorts and September additions are excluded from modeling.
+This executed notebook reads frozen experimental outputs. Annual release-year cohorts are the primary analysis; monthly date-added cohorts are a distinct supplementary target. Neither is a complete Netflix release pipeline. Projections are relative to completed historical periods, not the current calendar date. The snapshot ends September 25, 2021; 2021 release cohorts and September additions are excluded from modeling.
 
 Selection uses expanding chronological CV before the final test. There are no shuffled splits or future observed lag values. Final projections refit the selected model on all completed periods after evaluation. Test results remain frozen and must not be used to change the selected model.
 """)

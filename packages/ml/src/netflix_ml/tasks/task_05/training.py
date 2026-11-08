@@ -50,7 +50,7 @@ def prepare(config):
         "snapshot_date": dates.max().strftime("%Y-%m-%d"),
         "date_anomalies": anomaly.to_dict("records"),
         "anomaly_policy": "Retain source dates; release year may describe a later season. No chronological imputation or date correction.",
-        "deduplication": "First source row per casefolded trimmed title/type/year; same entity policy as Task 4, independent outputs",
+        "deduplication": "First source row per casefolded trimmed title/type/year; deterministic entity deduplication",
         "annual_excluded_2021": int(frame.release_year.eq(2021).sum()),
         "monthly_excluded_september_2021": int(frame.added_month.eq(pd.Timestamp("2021-09-01")).sum()),
     }
@@ -273,7 +273,7 @@ def train():
 def render_report(result):
     folder = root() / "reports/task-05"
     (folder / "figures").mkdir(parents=True, exist_ok=True)
-    text = f"# Task 5 — Historical trend forecasts\n\nRun `{result['run_id']}`; snapshot {result['snapshot_date']}. Projections are historical as-of estimates, not current forecasts.\n\n"
+    text = f"# Historical trend forecasts\n\nRun `{result['run_id']}`; snapshot {result['snapshot_date']}. Projections are historical as-of estimates, not current forecasts.\n\n"
     text += "Annual target: observed snapshot titles grouped by release year; not all Netflix releases. Monthly target: observed date-added cohorts; not original release dates. Incomplete 2021 release year and September 2021 additions are excluded. Removed titles and future backfills are absent; even older periods are not proven complete.\n\n"
     for row in result["series"]:
         text += f"## {row['target']} / {row['group']}\n\nSelected **{row['model']}** using CV MAE. Held-out test {row['test_start']} to {row['test_end']}.\n\n"

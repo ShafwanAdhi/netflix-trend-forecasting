@@ -1,0 +1,18 @@
+{
+  "repository": "netflix-trend-forecasting",
+  "commit": "0e09e0ef37ea18dd029ee5cf3df575581881b0c2",
+  "runs": [
+    {
+      "name": "Verify standalone task",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ShafwanAdhi/netflix-trend-forecasting/actions/runs/42465035840"
+    },
+    {
+      "name": "Container verification",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/ShafwanAdhi/netflix-trend-forecasting/actions/runs/42465035804"
+    }
+  ]
+}

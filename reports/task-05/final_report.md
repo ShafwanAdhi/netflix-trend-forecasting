@@ -1,4 +1,4 @@
-# Task 5 — Historical trend forecasts
+# Historical trend forecasts
 
 Run `20261106T122211417836Z`; snapshot 2021-09-25. Projections are historical as-of estimates, not current forecasts.
 
