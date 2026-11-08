@@ -122,7 +122,7 @@ def service(request):
     value = getattr(request.app.state, "forecasting", None)
     if value is None:
         raise HTTPException(
-            503, detail="Validated Task 5 forecast artifacts are unavailable. Run train_forecasting.py first."
+            503, detail="Validated forecast artifacts are unavailable. Run train_forecasting.py first."
         )
     return value
 

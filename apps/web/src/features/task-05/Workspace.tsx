@@ -230,7 +230,7 @@ export function ForecastOverview() {
   return (
     <>
       <PageHeading
-        eyebrow="TASK 05 / TIME SERIES"
+        eyebrow="TIME SERIES"
         title="Historical trends, explicit forecast limits."
         action={
           <Link className="button" to="/forecast">
@@ -303,7 +303,7 @@ export function ForecastOverview() {
           </p>
           <p>
             <strong>Two time concepts, independent targets.</strong> Release
-            year is the assignment focus. Monthly date-added forecasts
+            year is the primary analysis. Monthly date-added forecasts
             supplement it; they never stand in for original release dates.
           </p>
           <p>
@@ -338,7 +338,7 @@ function download(row: ForecastSeries, run: string) {
   );
   const link = document.createElement("a");
   link.href = url;
-  link.download = `task-05-${row.target}-${row.group}-${run}.csv`;
+  link.download = `trend-forecasting-${row.target}-${row.group}-${run}.csv`;
   link.click();
   URL.revokeObjectURL(url);
 }
@@ -351,7 +351,7 @@ export function ForecastWorkspace() {
   return (
     <>
       <PageHeading
-        eyebrow="TASK 05 / HISTORICAL PROJECTION"
+        eyebrow="HISTORICAL PROJECTION"
         title="Project from a frozen historical origin."
       >
         Change the target, content scope and horizon. Each view serves a saved
@@ -438,7 +438,7 @@ export function ForecastEvaluation() {
   return (
     <>
       <PageHeading
-        eyebrow="TASK 05 / CHRONOLOGICAL VALIDATION"
+        eyebrow="CHRONOLOGICAL VALIDATION"
         title="Compare forecasts with what followed."
       >
         Selection uses expanding-window validation. The final test is evaluated
@@ -588,10 +588,10 @@ export function ForecastMethodology() {
   return (
     <>
       <PageHeading
-        eyebrow="TASK 05 / EXPERIMENT DESIGN"
+        eyebrow="EXPERIMENT DESIGN"
         title="Respect time before fitting a trend."
       >
-        The assignment's release-year target and the supplementary date-added
+        The release-year target and the supplementary date-added
         target remain separate throughout preparation, validation and
         presentation.
       </PageHeading>
