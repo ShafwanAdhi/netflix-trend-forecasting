@@ -1,19 +1,48 @@
 # Netflix Trend Forecasting
 
-Machine learning application for historical time series. Includes a React frontend, FastAPI backend, ML package and selected immutable artifact bundle.
+Do historical validation winners generalize to later catalog periods? This project studies annual release cohorts and monthly additions with chronological model selection, simple baselines and explicit failure reporting. Intended for retrospective analysis, not current forecasts.
 
-## Status
+[Open live application](https://netflix-trend-forecasting.shafwan.digital)
 
-- Implemented: project workspace, About Dataset, audited variable rationale, actual preparation/split/segment outcomes, model evaluation and interactive results.
-- Interface: responsive RawBlock layout with self-hosted fonts and semantic chart colors and labelled legends; see [verification and screenshots](docs/VERIFICATION.md).
-- Repository: independent application, model artifacts and verification workflow.
-- Active model run: `20261106T122211417836Z`. See `artifacts/task-05/active.json` for the current run.
+![Netflix Trend Forecasting overview showing the project question, frozen result and interpretation limits](verification/portfolio/overview-desktop.png)
 
-- Motion: staged page/scroll reveals, chart and result transitions, hover/press feedback, and live reduced-motion support.
+## Measured results
 
-## Live application
+<!-- RESULTS:START -->
+Evidence run: `20261106T122211417836Z`. Generated from the active artifact; not a business-impact claim.
 
-[Open application](https://netflix-trend-forecasting.shafwan.digital) - deployed with Docker, Nginx and HTTPS. [Production verification](verification/release.json).
+Annual generalization failed; monthly results depend on the baseline. Model selection remains frozen.
+
+| Target / scope | CV-selected model | Test MAE | Last value MAE | Seasonal naive MAE |
+| --- | --- | ---: | ---: | ---: |
+| releases / all | ridge_1 | 2395.37 | 137.75 | Not evaluated |
+| releases / movies | ridge_1 | 1801.70 | 95.50 | Not evaluated |
+| releases / tv | ridge_1 | 527.58 | 125.75 | Not evaluated |
+| additions / all | ridge_100 | 48.11 | 70.00 | 45.33 |
+| additions / movies | ridge_100 | 28.51 | 54.00 | 24.50 |
+| additions / tv | forest_shallow | 19.33 | 20.33 | 20.83 |
+
+MAE is titles per period. Other predeclared candidates remain in Evaluation. This single snapshot is not point-in-time history; projections are historical as-of estimates and error bands are not calibrated confidence intervals.
+<!-- RESULTS:END -->
+
+## Decisions and implementation
+
+Use expanding-window CV and recursive held-out evaluation. Keep failed annual results and stronger baseline results visible instead of selecting again from test scores.
+
+The implementation covers data audit and preparation, model comparison, saved evaluation artifacts, a FastAPI service, a React workspace, validation and Docker packaging. This describes repository capabilities; no business adoption or measured commercial impact is claimed.
+
+```mermaid
+flowchart LR
+    A[Supplied CSV and provenance] --> B[Preparation and validation]
+    B --> C[Training and model selection]
+    C --> D[Frozen artifact and evaluation]
+    D --> E[FastAPI]
+    E --> F[React website]
+```
+
+## Reproduction boundary
+
+**Artifact inference:** the included validated bundle supports the website without the raw CSV. **Training reproduction:** requires the original supplied CSV matching [the provenance record](data/provenance.json). The exact upstream source and redistribution permission remain unverified; no public substitute is asserted to reproduce this training input. The observed maximum date added is not a known acquisition date.
 
 ## Quickstart
 
@@ -36,13 +65,13 @@ uv run python scripts/train_forecasting.py
 uv run python scripts/refresh_dataset.py
 corepack pnpm types
 uv run ruff check .
-uv run pytest
 corepack pnpm test
 corepack pnpm build
+uv run pytest
 corepack pnpm verify
 ```
 
-Training creates a new immutable run; regenerate the dataset profile whenever activating another run. The API refuses a stale profile. No performance values are invented by the frontend.
+Training creates a new immutable run; regenerate the dataset profile whenever activating another run. The API refuses a stale profile. No performance values are invented by the frontend. Run `uv run python scripts/refresh_readme.py` to update only the marked results above, or append `--check` to verify them. Source/provenance and run mismatches fail the command.
 
 ## Structure and documentation
 

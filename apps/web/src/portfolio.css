@@ -1,0 +1,117 @@
+/* Editorial findings precede the dataset workspace. */
+.case-study {
+  border-top: 2px solid currentColor;
+  padding: 28px 0 32px;
+}
+.case-study h2 {
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  max-width: 34ch;
+  margin: 8px 0 24px;
+  line-height: 1.12;
+}
+.case-finding {
+  max-width: 82ch;
+  border-left: 4px solid #2563eb;
+  padding-left: 18px;
+  margin: 20px 0;
+}
+.case-study h3 {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+.case-study p,
+.case-record dd {
+  line-height: 1.65;
+}
+.case-record {
+  margin: 24px 0;
+}
+.case-record > div {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr);
+  gap: 24px;
+  padding: 14px 0;
+  border-top: 1px solid #ccc;
+}
+.case-record dt {
+  font-weight: 700;
+}
+.case-record dd {
+  margin: 0;
+  max-width: 86ch;
+}
+.case-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.case-run {
+  font-family: monospace;
+  font-size: 0.78rem;
+  overflow-wrap: anywhere;
+  margin-top: 20px;
+}
+.case-run span {
+  margin-left: 8px;
+}
+.case-profile-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+}
+.case-profile-list article {
+  padding: 14px 0;
+  border-top: 1px solid #ccc;
+}
+.case-table {
+  margin: 24px 0;
+}
+.case-table caption {
+  text-align: left;
+  padding: 0 0 12px;
+  font-weight: 700;
+}
+.provenance-record {
+  border-top: 1px solid #aaa;
+  margin-top: 24px;
+  padding-top: 24px;
+  max-width: 100%;
+}
+.provenance-record p,
+.provenance-record li {
+  line-height: 1.6;
+  max-width: 90ch;
+}
+.provenance-record li {
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+.provenance-record summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 12px 0;
+}
+#estimate {
+  scroll-margin-top: 150px;
+}
+#estimate-heading:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 6px;
+}
+@media (max-width: 640px) {
+  .case-record > div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .case-study {
+    padding: 22px 0;
+  }
+  .case-actions {
+    gap: 18px;
+  }
+  .case-table {
+    max-width: 100%;
+  }
+}

@@ -1,3 +1,4 @@
+import { CaseStudy, useRunEvidence } from "../../components/CaseStudy";
 import { useSearchParams, Link } from "react-router";
 import { DATA_COLORS } from "../../lib/dataColors";
 import {
@@ -224,7 +225,10 @@ function selectRow(data: ForecastResults, target: string, group: string) {
 export function ForecastOverview() {
   const { data, error, isPending } = useForecastResults();
   const { target, group } = useSelection();
-  if (!data) return <State error={error} loading={isPending} />;
+  const evidence = useRunEvidence(data?.run_id);
+  if (error || evidence.error) return <State error={error || evidence.error} />;
+  if (!data || evidence.pending)
+    return <State loading={isPending || evidence.pending} />;
   const row = selectRow(data, target, group);
   const annual = target === "releases";
   return (
@@ -241,6 +245,95 @@ export function ForecastOverview() {
         Inspect release-year cohorts and catalog additions, then evaluate what
         the historical models could predict.
       </PageHeading>
+      <CaseStudy
+        question="Do models selected on past windows generalize to the next historical periods?"
+        finding="Annual generalization failed in the frozen test. Monthly models beat last value, but other predeclared baselines can perform better. The six-series comparison below keeps that distinction visible."
+        decision="Freeze selection using expanding-window CV, then evaluate once. Keep the original winner even when test baselines are better; recursive predictions never receive observed future lags."
+        limitation="These are retrospective snapshot studies, not current forecasts. Removed titles and backfills are unobserved; error bands are exploratory and uncalibrated."
+        coverage="Entity audit, completed-period aggregation, chronological folds, baseline comparisons, recursive evaluation, frozen projections, API and CSV export."
+        action="Explore historical projections"
+        href="/forecast"
+        run={data.run_id}
+      >
+        <div
+          className="table-scroll case-table"
+          role="region"
+          aria-label="Six-series held-out baseline comparison"
+          tabIndex={0}
+        >
+          <table>
+            <caption>
+              Held-out MAE · titles per period · lower is better
+            </caption>
+            <thead>
+              <tr>
+                <th>Target / scope</th>
+                <th>CV-selected model</th>
+                <th>Model MAE</th>
+                <th>Last value</th>
+                <th>Seasonal naive</th>
+                <th>Other predeclared baselines</th>
+                <th>Test verdict</th>
+              </tr>
+            </thead>
+            <tbody>
+              {data.series.map((series) => {
+                const last = series.comparison.find(
+                  (item) => item.model === "last_value",
+                );
+                const seasonal = series.comparison.find(
+                  (item) => item.model === "seasonal_naive",
+                );
+                const baselines = series.comparison.filter((item) =>
+                  ["last_value", "mean_3", "drift", "seasonal_naive"].includes(
+                    item.model,
+                  ),
+                );
+                const better = baselines.filter(
+                  (item) => item.test_metrics.mae < series.test_metrics.mae,
+                );
+                return (
+                  <tr key={`${series.target}-${series.group}`}>
+                    <th>
+                      {series.target === "releases" ? "Annual" : "Monthly"} /{" "}
+                      {series.group}
+                    </th>
+                    <td>{modelName(series.model)}</td>
+                    <td>{number(series.test_metrics.mae)}</td>
+                    <td>
+                      {last ? number(last.test_metrics.mae) : "Not evaluated"}
+                    </td>
+                    <td>
+                      {seasonal
+                        ? number(seasonal.test_metrics.mae)
+                        : "Not evaluated"}
+                    </td>
+                    <td>
+                      {baselines
+                        .filter(
+                          (item) =>
+                            !["last_value", "seasonal_naive"].includes(
+                              item.model,
+                            ),
+                        )
+                        .map(
+                          (item) =>
+                            `${modelName(item.model)}: ${number(item.test_metrics.mae)}`,
+                        )
+                        .join("; ") || "None"}
+                    </td>
+                    <td>
+                      {better.length
+                        ? `Worse than ${better.map((item) => modelName(item.model)).join(", ")}`
+                        : "No listed baseline has lower test MAE"}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </CaseStudy>
       <Controls />
       <div className="summary-strip">
         <div>
@@ -591,9 +684,8 @@ export function ForecastMethodology() {
         eyebrow="EXPERIMENT DESIGN"
         title="Respect time before fitting a trend."
       >
-        The release-year target and the supplementary date-added
-        target remain separate throughout preparation, validation and
-        presentation.
+        The release-year target and the supplementary date-added target remain
+        separate throughout preparation, validation and presentation.
       </PageHeading>
       <section className="method-grid">
         <div>
